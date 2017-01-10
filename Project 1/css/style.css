@@ -29,38 +29,41 @@ a:visited {
 }
 
 a:hover {
-	color: #96c8d1;
+	color: #f9f9f9;
 
 }
 
 .container {
 	background-color: #d2eeef;
-	width: 15em;
+	width: 20%;
 	position: fixed;
 	padding: 1em 2em 2em 2em;
 	height: 100%;
+	min-width: 224px;
 }
 
 .content {
 	background-color: #dbdbdb;
-	width: 40em;
+	width: 67.5%;
 	position: scroll;
 	padding: 1em 2em 2em 2em;
 	float: left;
 	clear: left;
-	margin-left: 20em;
+	margin-left: 27%;
+	margin-right: 6em;
 	margin-bottom: 1.5em;
 	min-width: 400px;
 }
 
 .content2 {
 	background-color: #96c8d1;
-	width: 40em;
+	width: 67.5%;
 	position: scroll;
 	padding: 1em 2em 2em 2em;
 	float: left;
 	clear: left;
-	margin-left: 20em;
+	margin-left: 27%;
+	margin-right: 6em;
 	margin-bottom: 1.5em;
 	min-width: 400px;
 }
@@ -81,7 +84,7 @@ h2 {
 }
 
 #bio {
-	text-align: justify;
+	text-align: left;
 }
 
 ul {
@@ -93,7 +96,7 @@ p, ul {
 }
 
 
-.right {
+/*.right {
 	background-color: #d2eeef;
 	width: 10em;
 	position: fixed;
@@ -102,10 +105,11 @@ p, ul {
 	float: right;
 	clear: right;
 	margin-left: 65em;
-}
+}*/
 
 .logoimg {
 	margin-bottom: 2em;
 	position: absolute;
 	bottom: 3em;
 }
+
