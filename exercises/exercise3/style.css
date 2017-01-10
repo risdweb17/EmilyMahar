@@ -1,0 +1,38 @@
+h1, h2, ul, ol, li { font-family: 'Muli', sans-serif;
+}
+
+.tarte {
+	margin-top: 3em;
+	width: 20em;
+	height: 22em;
+	border: 0.3em dotted #ccc;
+	padding: 1em;
+	margin-bottom: 2em;
+}
+
+.filling {
+	margin-top: 2em;
+	width: 20em;
+	height: 22em;
+	border: 0.3em dotted #ccc;
+	padding: 1em 1em 1em 1em;
+	margin-bottom: 3em;
+
+}
+
+.title {
+	width: 20em;
+	height: 1.5em;
+	border: 0.3em dotted #ccc;
+	padding: 1.5em;
+	padding-top: 0.5em;
+	margin-bottom: 1em;
+	line-height: 0.1em;
+	text-align: center;
+
+}
+
+.column {
+	width: 30%;
+	float: left;
+}

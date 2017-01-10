@@ -1,0 +1,111 @@
+h1, h2 {
+	font-family: 'Work Sans', sans-serif;
+	color: #222323;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+p, ul {
+	font-family: 'Work Sans', sans-serif;
+	color: #494949;
+	font-weight: 400;
+}
+
+strong {
+	font-weight: 600;
+}
+
+em {
+	font-style: thin
+	font-weight: 300;
+}
+
+a:link {
+	color: #222323;
+}
+
+a:visited {
+	color: #516b70;
+}
+
+a:hover {
+	color: #96c8d1;
+
+}
+
+.container {
+	background-color: #d2eeef;
+	width: 15em;
+	position: fixed;
+	padding: 1em 2em 2em 2em;
+	height: 100%;
+}
+
+.content {
+	background-color: #dbdbdb;
+	width: 40em;
+	position: scroll;
+	padding: 1em 2em 2em 2em;
+	float: left;
+	clear: left;
+	margin-left: 20em;
+	margin-bottom: 1.5em;
+	min-width: 400px;
+}
+
+.content2 {
+	background-color: #96c8d1;
+	width: 40em;
+	position: scroll;
+	padding: 1em 2em 2em 2em;
+	float: left;
+	clear: left;
+	margin-left: 20em;
+	margin-bottom: 1.5em;
+	min-width: 400px;
+}
+
+.profile-img {
+	display: inline-block;
+	margin: 0.5em 0.5em 0.5em 0.5em;
+}
+
+h1 {
+	text-align: center;
+	line-height: 1em;
+	letter-spacing: 0.1em;
+}
+
+h2 {
+	letter-spacing: 0.1em;
+}
+
+#bio {
+	text-align: justify;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p, ul {
+	line-height: 1.5em;
+}
+
+
+.right {
+	background-color: #d2eeef;
+	width: 10em;
+	position: fixed;
+	padding: 1em 2em 2em 2em;
+	height: 100%;
+	float: right;
+	clear: right;
+	margin-left: 65em;
+}
+
+.logoimg {
+	margin-bottom: 2em;
+	position: absolute;
+	bottom: 3em;
+}
