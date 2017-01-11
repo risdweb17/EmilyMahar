@@ -1,14 +1,26 @@
-h1, h2 {
+h1 {
 	font-family: 'Work Sans', sans-serif;
-	color: #222323;
 	font-weight: 400;
 	text-transform: uppercase;
+	color: #494949;
+	text-align: center;
+	line-height: 1em;
+	letter-spacing: 0.1em;
+}
+
+h2 {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #494949;
+	letter-spacing: 0.1em;
 }
 
 p, ul {
 	font-family: 'Work Sans', sans-serif;
 	color: #494949;
 	font-weight: 400;
+	line-height: 1.5em;
 }
 
 strong {
@@ -53,7 +65,6 @@ a:hover {
 	margin-left: 27%;
 	margin-right: 6em;
 	margin-bottom: 1.5em;
-	min-width: 400px;
 }
 
 .content2 {
@@ -66,23 +77,8 @@ a:hover {
 	margin-left: 27%;
 	margin-right: 6em;
 	margin-bottom: 1.5em;
-/*	min-width: 400px;*/
 }
 
-.profile-img {
-	display: inline-block;
-	margin: auto;
-}
-
-h1 {
-	text-align: center;
-	line-height: 1em;
-	letter-spacing: 0.1em;
-}
-
-h2 {
-	letter-spacing: 0.1em;
-}
 
 #bio {
 	text-align: left;
@@ -92,47 +88,44 @@ ul {
   list-style-type: none;
 }
 
-p, ul {
-	line-height: 1.5em;
-}
-
-
-/*.right {
-	background-color: #d2eeef;
-	width: 10em;
-	position: fixed;
-	padding: 1em 2em 2em 2em;
-	height: 100%;
-	float: right;
-	clear: right;
-	margin-left: 65em;
-}*/
-
-.logoimg {
-	margin-bottom: 2em;
-	position: absolute;
-	bottom: 3em;
+.logo {
+	display: inline-block;
+	margin: auto;
 }
 
 @media screen and (max-width: 1000px){
 	 .container {
-	 	width: 96%;
+	 	width: 100%;
+	 	height: auto;
 	 	padding-right: 2em;
-	 	position: scroll;
-	 	flex-wrap: wrap;
+	 	position: relative;
+	 	margin-bottom: 1.5em;
+	 	min-width: 207px;
 	 }
+
+/*Still don't know how to get the image to center when screen size changes?*/
+
+	 .logo {
+	 	height: auto;
+	 	width: auto;
+	 	position: relative;
+	 	display: inline;
+	 	margin-left: auto;
+	 	margin-right: auto;
+	 }
+
 	 .content {
-	 	width: 96%;
-	 	padding-right: 2em;
-	 	position: scroll;
-	 	margin-left: 0%;
-	 	flex-wrap: wrap;
+	 	width: 100%;
+	 	position: relative;
+	 	margin-left: 0;
+	 	min-width: 207px;
+	 	height: auto;
+
 	 }
 	 .content2 {
-	 	width: 96%
-	 	padding-right: 2em;
-	 	position: scroll;
-	 	margin-left: 0%;
-	 	flex-wrap: wrap;
-	 }
+	 	width: 100%;
+	 	position: relative;
+	 	margin-left: 0;
+	 	min-width: 207px;
+	 	height: auto;
 }
