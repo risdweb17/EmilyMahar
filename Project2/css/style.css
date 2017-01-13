@@ -1,0 +1,118 @@
+h1, h2, h3, h4, p, ul, li, footer {
+	font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+h1 {
+	font-weight: 500;
+	letter-spacing: 0.4em;
+	font-size: 2.5em;
+}
+
+h2 {
+	font-weight: 400;
+	letter-spacing: 0.2em;
+	font-size: 2em;
+}
+
+h3 {
+	font-weight: 400;
+	letter-spacing: 0.2em;
+	font-size: 1.75em;
+}
+
+h4 {
+	font-weight: 300;
+	letter-spacing: 0.1em;
+	font-size: 1em;
+}
+
+
+.nav-container {
+	background-color: red;
+	display: flex;
+	padding: 1em;
+	justify-content: flex-start;
+}
+
+.header {
+	flex: 2
+}
+
+.navigation {
+	flex: 1;
+	padding: 0.5em;
+}
+
+.sitebody {
+	background-color: pink;
+	padding: 1em;
+	display: flex;
+	justify-content: center;
+}
+
+.main-content {
+	background-color: purple;
+	display: flex;
+	flex: 4;
+	flex-wrap: wrap;
+	padding: 1em;
+	margin-right: 1em;
+	justify-content: center;
+}
+
+.right-sidebar {
+	background-color: blue;
+	flex: 1;
+}
+
+#main-featured-content {
+	background-color: yellow;
+	padding: 1em;
+	display: flex;
+	flex: 1;
+	align-items: flex-end;
+	margin-bottom: 1em;
+}
+
+.featuredtext {
+	margin: 1em;
+}
+
+.other-posts {
+	background-color: white;
+	display: flex;
+	flex: 1;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+#post1 {
+	flex: 1;
+	padding: 1em;
+}
+
+#post2 {
+	flex: 1;
+	padding: 1em;
+}
+
+#post3 {
+	flex: 1;
+	padding: 1em;
+}
+
+#post4 {
+	flex: 1;
+	padding: 1em;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+}
+
+.footer-text {
+	flex: 1;
+	display: inline-block;
+	padding: 0.5em;
+}
