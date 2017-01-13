@@ -21,14 +21,14 @@ h3 {
 }
 
 h4 {
-	font-weight: 300;
+	font-weight: 300 italic;
 	letter-spacing: 0.1em;
-	font-size: 1em;
+	font-size: 1.35em;
 	line-height: 2;
 }
 
 p {
-	line-height: 3;
+	line-height: 2;
 	padding: 0em 10em 0em 10em;
 	font-size: 1.25em;
 	margin-top: 1em;
@@ -38,11 +38,12 @@ img{
 	width: 100%;
 }
 .nav-container {
-	background-color: red;
+	background-color: white;
 	width: 100%;
 	display: flex;
 	position: fixed;
 	top: 0;
+	left: 0;
 	padding: 1em;
 	justify-content: flex-start;
 }
@@ -57,20 +58,20 @@ img{
 }
 
 .sitebody {
-	background-color: white;
+	background-color: #f2f2f2;
 	padding: 1em;
 	justify-content: center;
 	position: scroll;
 }
 
 .main-content {
-	background-color: white;
+	background-color: #f2f2f2;
 	padding: 1em;
 	justify-content: center;
 }
 
 #main-featured-content {
-	background-color: white;
+	background-color: #f2f2f2;
 	padding: 1em;
 	align-items: flex-end;
 }
@@ -83,15 +84,12 @@ img{
 
 #featured-text {
 	margin-bottom: 3em;
-}
-
-h4 #featured-text {
 	font-weight: 400;
 }
 
-#body-text {
+.body-text {
 	text-align: left;
-	margin-top: 3em;
+	font-weight: 300;
 }
 
 .footer {
@@ -102,4 +100,5 @@ h4 #featured-text {
 .footer-text {
 	display: inline-block;
 	padding: 0.5em;
+	font-weight: 300;
 }
