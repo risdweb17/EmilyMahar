@@ -25,6 +25,7 @@ h4 {
 	letter-spacing: 0.1em;
 	font-size: 1.35em;
 	line-height: 2;
+	color: #474747;
 }
 
 p {
@@ -36,6 +37,10 @@ p {
 
 img{
 	width: 100%;
+}
+
+ul {
+	list-style-type: none;
 }
 .nav-container {
 	background-color: white;
@@ -49,17 +54,19 @@ img{
 }
 
 .header {
-	flex: 2
+	padding-left: 1em;
+	flex: 2;
 }
 
 .navigation {
 	flex: 1;
 	padding: 0.5em;
+	position: relative;
 }
 
 .sitebody {
 	background-color: #f2f2f2;
-	padding: 1em;
+	padding: 1em 1em 0em;
 	justify-content: center;
 	position: scroll;
 }
@@ -79,7 +86,7 @@ img{
 .featuredtext {
 	margin: 1em;
 	text-align: center;
-	padding: 10em 10em 2.5em 10em;
+	padding: 7em 12em 2.5em 12em;
 }
 
 #featured-text {
@@ -90,15 +97,20 @@ img{
 .body-text {
 	text-align: left;
 	font-weight: 300;
+	margin-bottom: 3em;
 }
 
 .footer {
 	display: flex;
 	justify-content: center;
+	border-top: solid;
+	border-width: 1px;
+	bottom: 0;
 }
 
 .footer-text {
 	display: inline-block;
 	padding: 0.5em;
 	font-weight: 300;
+	margin-bottom: 0em;
 }
