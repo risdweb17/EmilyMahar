@@ -1,15 +1,19 @@
-h1, h2, h3, h4, p, ul, li, footer {
+h1, h2 {
+	font-family: 'Playfair Display', serif;
+}
+
+h3, h4, p, ul, li, footer {
 	font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 h1 {
-	font-weight: 500;
+	font-weight: 700;
 	letter-spacing: 0.4em;
 	font-size: 2.5em;
 }
 
 h2 {
-	font-weight: 400;
+	font-weight: 700;
 	letter-spacing: 0.2em;
 	font-size: 3em;
 }
