@@ -1,31 +1,30 @@
-h1, h2 {
-	font-family: 'Playfair Display', serif;
-}
-
-h3, h4, p, ul, li, footer {
+h1, h2, h3, h4, p, ul, li, footer {
 	font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 h1 {
-	font-weight: 700;
+	font-weight: 500;
 	letter-spacing: 0.4em;
 	font-size: 2.5em;
+	color: #3a3a3a;
 }
 
 h2 {
-	font-weight: 700;
+	font-weight: 500;
 	letter-spacing: 0.2em;
 	font-size: 3em;
+	color: #3a3a3a;
 }
 
 h3 {
 	font-weight: 400;
 	letter-spacing: 0.2em;
 	font-size: 1.75em;
+	color: #3a3a3a;
 }
 
 h4 {
-	font-weight: 300 italic;
+	font-weight: 300;
 	letter-spacing: 0.1em;
 	font-size: 1.35em;
 	line-height: 2;
@@ -34,9 +33,10 @@ h4 {
 
 p {
 	line-height: 2;
-	padding: 0em 10em 0em 10em;
+	padding: 0em 15em 0em 15em;
 	font-size: 1.25em;
 	margin-top: 1em;
+	font-family: 'PT Serif', serif;
 }
 
 img{
@@ -45,16 +45,40 @@ img{
 
 ul {
 	list-style-type: none;
+	padding-left: 0;
 }
+
+a {
+	text-decoration: none;
+	color: #ff7363;
+}
+
+a:link {
+	color: #ff8e82;
+}
+
+a:visited {
+	color: #ff8e82;
+}
+
+a:hover {
+	color: #ffaaa0;
+
+}
+
+
 .nav-container {
-	background-color: white;
+	background-color: #ffc3bc;
 	width: 100%;
 	display: flex;
 	position: fixed;
 	top: 0;
 	left: 0;
-	padding: 1em;
+	padding: 0.05em;
 	justify-content: flex-start;
+	align-items: baseline;
+	align-content: flex-start;
+	box-shadow: 0px 6px 50px #666666;
 }
 
 .header {
@@ -64,25 +88,64 @@ ul {
 
 .navigation {
 	flex: 1;
-	padding: 0.5em;
 	position: relative;
+	display: inline-block;
+	justify-content: flex-start;
+}
+
+.button {
+    background-color: #ffc3bc;
+    color: black;
+    padding: 1em;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+	display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 6px 20px #666666;
+}
+
+.dropdown a {
+	color: black;
+    padding: 1em 2em;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+	background-color: #ff8e82;
+}
+
+.navigation:hover .dropdown {
+	display: block;
+}
+
+.navigation:hover .button {
+	background-color: #ffaaa0;
 }
 
 .sitebody {
-	background-color: #f2f2f2;
+	background-color: #ffe5e2;
 	padding: 1em 1em 0em;
 	justify-content: center;
 	position: scroll;
 }
 
 .main-content {
-	background-color: #f2f2f2;
+	background-color: #ffe5e2;
 	padding: 1em;
 	justify-content: center;
 }
 
 #main-featured-content {
-	background-color: #f2f2f2;
+	background-color: #ffe5e2;
 	padding: 1em;
 	align-items: flex-end;
 }
@@ -90,7 +153,7 @@ ul {
 .featuredtext {
 	margin: 1em;
 	text-align: center;
-	padding: 7em 12em 2.5em 12em;
+	padding: 7em 15em 2.5em 15em;
 }
 
 #featured-text {
@@ -117,4 +180,9 @@ ul {
 	padding: 0.5em;
 	font-weight: 300;
 	margin-bottom: 0em;
+}
+
+
+@media screen and (max-width: 1040px) {
+	
 }
