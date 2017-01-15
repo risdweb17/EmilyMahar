@@ -28,7 +28,7 @@ h4 {
 	letter-spacing: 0.1em;
 	font-size: 1.35em;
 	line-height: 2;
-	color: #474747;
+	color: #707070;
 }
 
 p {
@@ -165,13 +165,15 @@ a:hover {
 	text-align: left;
 	font-weight: 300;
 	margin-bottom: 3em;
+	color: #474747;
 }
 
 .footer {
 	display: flex;
 	justify-content: center;
 	border-top: solid;
-	border-width: 1px;
+	border-width: 1px;\
+	border-color:  #474747;;
 	bottom: 0;
 }
 
@@ -182,6 +184,59 @@ a:hover {
 	margin-bottom: 0em;
 }
 
+
+.welcome-container {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: stretch;
+	background-color: #ffe5e2;
+}
+
+h1.welcome-text {
+	flex: stretch;
+	flex:1;
+	text-align: center;
+	vertical-align: center;
+	padding: 20%;
+	color: #3a3a3a;
+}
+
+a.welcome-text {
+	a {
+	text-decoration: none;
+	color: #3a3a3a;
+}
+
+a:link.welcome-text {
+	color: #3a3a3a;
+}
+
+a:visited.welcome-text {
+	color: #ff8e82;
+}
+
+a:hover.welcome-text {
+	color: #ffaaa0;
+
+}
+
+/*.nav-menu {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: stretch;
+	background-color: #ffe5e2;*/
+}
+
+h2.nav-text {
+	flex: stretch;
+	flex: 1;
+	text-align: center;
+	vertical-align: center;
+	padding: 5em 1em 5em 1em;
+	color: #3a3a3a;
+}
 
 @media screen and (max-width: 1040px) {
 	
