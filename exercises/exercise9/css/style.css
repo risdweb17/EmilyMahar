@@ -1,0 +1,115 @@
+.background {
+	background-color: #ce3b3b;
+	height:1050px;
+	width: 700px;
+	z-index: -8;
+	overflow: hidden;
+}
+
+.redbar1 {
+	width: 5em;
+	height: 25em;
+	background-color: #8e3939;
+	margin: 1em;
+	float: left;
+	transform: rotate(45deg) translateY(-285px) translateX(-5em);
+}
+
+.redbar2 {
+	width: 5em;
+	height: 25em;
+	background-color: #8e3939;
+	margin: 1.75em;
+	float: left;
+	transform: rotate(45deg) translateY(-208px) translateX(-5em);
+}
+
+.redbar3 {
+	width: 5em;
+	height: 25em;
+	background-color: #8e3939;
+	margin: 1.75em;
+	float: left;
+	transform: rotate(45deg) translateY(-110px) translateX(-5em);
+}
+
+.blackbar1 {
+	width: 5em;
+	height: 25em;
+	background-color: #0c0303;
+	margin: 1.75em;
+	float: left;
+	transform: rotate(45deg) translateY(15em) translateX(-5em);
+}
+
+.redbar4 {
+	width: 5em;
+	height: 25em;
+	background-color: #8e3939;
+	margin: 1.75em;
+	float: left;
+	transform: rotate(45deg) translateY(93px) translateX(-5em);
+}
+
+.blackbar2 {
+	width: 5em;
+	height: 25em;
+	background-color: #0c0303;
+	margin: 1.75em;
+	float: left;
+	transform: rotate(45deg) translateY(-354px) translateX(63px);
+}
+
+.blackbar3 {
+	width: 5em;
+	height: 25em;
+	background-color: #0c0303;
+	margin: 1.75em;
+	float: left;
+	transform: rotate(45deg) translateY(-258px) translateX(65px);
+}
+
+.blackbar4 {
+	width: 5em;
+	height: 25em;
+	background-color: #0c0303;
+	margin: 1.75em;
+	float: left;
+	transform: rotate(45deg) translateY(-163px) translateX(68px);
+}
+
+.column1 {
+	float: left;
+	line-height: 10px;
+	padding: 40px;
+	transform: translateX(-430px) translateY(380px);
+}
+
+.mini-column {
+	float: left;
+	line-height: 20px;
+	padding: 40px;
+	transform: translateX(-253px) translateY(208px);
+}
+
+.column2 {
+	float: left;
+	line-height: 10px;
+	padding: 40px;
+	transform: translateX(-202px) translateY(-5px);
+}
+
+.column3 {
+	float: right;
+	width: 200px;
+	line-height: 10px;
+	transform: translateX(-40px) translateY(-207px);
+}
+
+p, h2 {
+	font-family: "Helvetica", sans-serif;
+}
+
+p {
+	font-size: 6pt;
+}
