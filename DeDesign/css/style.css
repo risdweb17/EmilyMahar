@@ -366,7 +366,7 @@ p.long-text {
 		text-align: left;
 		padding: 1em;
 	}
-
+/*STILL HAVING ISSUES MAKING THE CONTENT RESPONSIVE ON CHAPTER PAGES*/
 	.into-text {
 		display: flex;
 		position: relative;
