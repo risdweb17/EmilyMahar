@@ -104,6 +104,11 @@
 	width: 200px;
 	line-height: 10px;
 	transform: translateX(-40px) translateY(-207px);
+	margin-bottom: 0;
+}
+
+p.column3 {
+	margin-bottom: 0;
 }
 
 p, h2 {
@@ -113,3 +118,25 @@ p, h2 {
 p {
 	font-size: 6pt;
 }
+
+@keyframes blackbar {
+
+	0% {transform: rotate(45deg) translateY(15em) translateX(-5em);}
+	50% {transform: rotate(45deg) translateY(30em) translateX(-5em);}
+	100% {transform: rotate(45deg) translateY(15em) translateX(-5em);}
+}
+
+	.blackbar1 {
+		animation: blackbar 3s ease running infinite alternate-reverse;
+	}
+
+@keyframes redbar {
+
+	0% {transform: rotate(45deg) translateY(93px) translateX(-5em);}
+	50% {transform: rotate(45deg) translateY(-10em) translateX(-5em);}
+	100% {transform: rotate(45deg) translateY(93px) translateX(-5em);}
+}
+
+	.redbar4 {
+		animation: redbar 3s ease running infinite alternate-reverse;
+	}
