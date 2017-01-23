@@ -21,6 +21,11 @@ h3 {
 	font-size: 20pt;
 }
 
+h4 {
+	font-family: 'Fauna One', serif;
+	color: #3d5156;
+}
+
 a {
 	text-decoration: none;
 	color: #3d5156;
@@ -43,6 +48,22 @@ img {
 	width: 13em;
 	box-shadow: 10px 10px 30px #939085;
 	z-index: -1;
+}
+
+.sort h4 {
+	float: right;
+	margin-right: 25em;
+	margin-bottom: 1em;
+}
+
+.select {
+	float: right;
+	margin-right: -13em;
+	bottom: 1em;
+}
+
+.form {
+	float: right;
 }
 
 .mainimg:hover {
@@ -159,6 +180,7 @@ img {
     background: #efeade;
     overflow: scroll;
     margin: 5em 25% 5em 25%;
+    border-radius: 0.5em;
 
 }
 
