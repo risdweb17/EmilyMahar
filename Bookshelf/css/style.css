@@ -50,22 +50,6 @@ img {
 	z-index: -1;
 }
 
-.sort h4 {
-	float: right;
-	margin-right: 25em;
-	margin-bottom: 1em;
-}
-
-.select {
-	float: right;
-	margin-right: -13em;
-	bottom: 1em;
-}
-
-.form {
-	float: right;
-}
-
 .mainimg:hover {
 	transform: translateY(-1em);
 
@@ -205,4 +189,48 @@ img {
 }
 .close:hover {
     background: #efeade;
+}
+
+footer {
+	width: 100vw;
+	display: flex;
+	clear: flex;
+	align-items: center;
+	position: sticky;
+}
+
+.sort {
+	flex: 1;
+	position: absolute;
+	margin-bottom: 0;
+	margin-left: 1em;
+}
+
+.select {
+	flex: 0.1;
+	position: absolute;
+	margin-left: 8em;
+}
+
+.form {
+	flex: 1;
+	position: absolute;
+	margin-left: 11em;
+}
+
+
+
+@media screen and (max-width: 550px){
+	.sitebody {
+		margin-top: 20em;
+	}
+}
+
+@media screen and (max-width: 1030px){
+	.modalDialog > div {
+		width: 100%;
+		height: 100%;
+		margin: 1em;
+	}
+
 }
