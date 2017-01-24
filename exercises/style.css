@@ -1,0 +1,43 @@
+body {
+	font-family: "Fauna One", sans-serif;
+	color: #6f84a5;
+}
+
+a {
+	text-decoration: none;
+	color: #6f84a5;
+}
+
+.container {
+	background-color: #c6dcff;
+	width: 4em;
+	height: 100vh;
+	position: fixed;
+	float: right;
+}
+
+.menu {
+	height: 100vh;
+	width: 4em;
+	display: inline-block;
+	background-color: #c6dcff;
+	padding-top: 5em;
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+h3 {
+	display: hidden;
+}
+
+button {
+	background-color: #c6dcff;
+	float: right;
+	position: absolute;
+	border: none;
+}
+
+i {
+	margin: 0.5em;
+	float: right;
+}

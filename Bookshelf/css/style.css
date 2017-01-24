@@ -148,7 +148,7 @@ img {
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     pointer-events: none;
-    overflow: scroll;
+    overflow: visible;
  
 }
 .modalDialog:target {
@@ -167,7 +167,6 @@ img {
     border-radius: 0.5em;
 
 }
-
 .close {
     background: rgb(188, 183, 169);
     color: #FFFFFF;
@@ -218,19 +217,33 @@ footer {
 	margin-left: 11em;
 }
 
-
-
-@media screen and (max-width: 550px){
-	.sitebody {
-		margin-top: 20em;
-	}
-}
-
 @media screen and (max-width: 1030px){
 	.modalDialog > div {
-		width: 100%;
-		height: 100%;
+		position: absolute;
+		width: auto;
+		height: 100vh;
 		margin: 1em;
+		padding: 0.5em;
+	}
+	
+}
+
+@media screen and (max-width: 470px){
+	.sitebody {
+		margin-top: 18em;
+		min-width: 365px;
 	}
 
+	.nav-container {
+		min-width: 365px;
+	}
+
+	.navigation {
+		width: 100%;
+	}
+
+	.button {
+		align-content: center;
+	}
+	
 }
