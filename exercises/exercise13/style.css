@@ -1,0 +1,73 @@
+body {
+	font-family: "Fauna One", sans-serif;
+	color: #6f84a5;
+}
+
+a {
+	text-decoration: none;
+	color: #6f84a5;
+}
+
+a:hover {
+	color: #606b7c;
+}
+
+button {
+	display: none;
+}
+
+h3 {
+	display: inline-block;
+	float: right;
+	margin-top: 1.5em;
+	margin-right: 1em;
+}
+
+.container {
+	background-color: #c6dcff;
+	width: 100vw;
+	height: 12vh;
+
+}
+
+@media screen and (max-width: 550px) {
+
+h3 {
+	display: none;
+	background-color: #c6dcff;
+	width: 96.25vw;
+	position: relative;
+	margin: 0;
+	padding: 0.5em;
+	float: right;
+}
+
+.menu {
+	background-color: #c6dcff;
+	width: 100vw;
+	height: auto;
+}
+
+button {
+	background-color: #c6dcff;
+	border: none;
+	display: block;
+	width: 80px;
+	height: 80px;
+
+}
+
+#x {
+	display: none;
+}
+
+i {
+	background-color: #c6dcff;
+	color: #6f84a5;
+	cursor: pointer;
+	padding: 15px;
+}
+
+i:hover {
+	color: #606b7c;
+}
