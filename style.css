@@ -1,0 +1,97 @@
+a {
+	text-decoration: none;
+	color: black;
+}
+
+h1 {
+	font-family: 'Arapey', serif;
+	letter-spacing: 5px;
+	font-weight: 200;
+	text-transform: lowercase;
+}
+
+h3 { 
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	margin-top: 2px;
+	line-height: 1em;
+}
+
+h2 {
+	font-family: 'Arapey', serif;
+	letter-spacing: 5px;
+	font-weight: 400;
+	margin-top: 2em;
+	text-transform: lowercase;
+}
+
+.heading {
+	display: inline-block;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+div {
+	position: fixed;
+	align-content: center;
+	align-items: center;
+	padding: 3em;
+	display: flex;
+	width: auto;
+	height: 20vh;
+	transition: height 1s;
+}
+
+div:hover {
+	height: 30vh;
+
+}
+
+.body {
+	display: flex;
+	clear: flex;
+	bottom: 3em;
+	width: 90vw;
+
+}
+
+#projects {
+	position: relative;
+	flex: 1;
+	background-color: #0B3954;
+	cursor: pointer;
+}
+
+#projectsexpanded {
+	display: none;
+	background-color: #0B3954;
+}
+
+
+#exercises {
+	position: relative;
+	flex: 1;
+	background-color: #BFD7EA;
+	cursor: pointer;
+}
+
+#responses {
+	position: relative;
+	flex: 1;
+	background-color: #FF6663;
+	cursor: pointer;
+}
+
+#codeacademy {
+	position: relative;
+	flex: 1;
+	background-color: #CCE848;
+	cursor: pointer;
+}
+
+ul, li {
+	display: none;
+}
