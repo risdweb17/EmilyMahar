@@ -89,8 +89,8 @@ ul {
 }
 
 .logo {
-	display: inline-block;
 	margin: auto;
+	display: block;
 }
 
 @media screen and (max-width: 1000px){
@@ -103,13 +103,16 @@ ul {
 	 	min-width: 207px;
 	 }
 
-/*Still don't know how to get the image to center when screen size changes?*/
+p.container {
+	display: inline-block;
+	text-align: left;
+}
 
 	 .logo {
 	 	height: auto;
 	 	width: auto;
+	 	display: inline-block;
 	 	position: relative;
-	 	display: inline;
 	 	margin-left: auto;
 	 	margin-right: auto;
 	 }

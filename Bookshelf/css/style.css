@@ -50,6 +50,10 @@ img {
 	z-index: -1;
 }
 
+.mainimg {
+	transition: 0.5s;
+}
+
 .mainimg:hover {
 	transform: translateY(-1em);
 
@@ -109,6 +113,7 @@ img {
     padding: 1em;
     text-decoration: none;
     display: block;
+    transition: 0.5s;
 }
 
 .dropdown a:hover {
