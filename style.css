@@ -1,3 +1,7 @@
+ul li {
+	color: black;
+}
+
 a {
 	text-decoration: none;
 	color: black;
@@ -42,11 +46,11 @@ div {
 	display: flex;
 	width: auto;
 	height: 20vh;
-	transition: height 1s;
+	transition: height 0.5s;
 }
 
-div:hover {
-	height: 30vh;
+.projects:hover, .exercises:hover, .responses:hover, .codeacademy:hover {
+	height: 25vh;
 
 }
 
@@ -58,40 +62,119 @@ div:hover {
 
 }
 
-#projects {
+.projects {
 	position: relative;
 	flex: 1;
-	background-color: #0B3954;
+	background-color: #105e8c;
 	cursor: pointer;
 }
 
-#projectsexpanded {
+.projectsexpanded {
+	bottom: 48vh;
+	left: 50%;
 	display: none;
-	background-color: #0B3954;
+	width: 40vw;
+	height: 25vh;
+	z-index: 1;
+	padding-top: 1.5em;
+	padding-left: 1em;
+	background-color: #105e8c;
+	position: absolute;
 }
 
+.projectsexpanded li {
+	line-height: 2em;
+	margin-left: 2em;
+}
 
-#exercises {
+.projectsexpanded a:hover {
+	color: #BFD7EA;
+	transition: 0.5s;
+}
+
+.exercises {
 	position: relative;
 	flex: 1;
 	background-color: #BFD7EA;
 	cursor: pointer;
 }
 
-#responses {
+.exercisesexpanded {
+	bottom: 43vh;
+	left: 50%;
+	display: none;
+	width: 40vw;
+	height: 30vh;
+	z-index: 1;
+	padding-top: 2.5em;
+	padding-left: 1em;
+	background-color: #BFD7EA;
+	position: absolute;
+}
+
+.exercisesexpanded li {
+	line-height: 1.5em;
+	}
+
+.exercisesexpanded a:hover {
+	color: #FF6663;
+	transition: 0.5s;
+}
+
+.responses {
 	position: relative;
 	flex: 1;
 	background-color: #FF6663;
 	cursor: pointer;
 }
 
-#codeacademy {
+.responsesexpanded {
+	bottom: 45vh;
+	left: 50%;
+	display: none;
+	width: 40vw;
+	height: 25vh;
+	z-index: 1;
+	padding-top: 2.25em;
+	padding-left: 1em;
+	background-color: #FF6663;
+	position: absolute;
+}
+
+.responsesexpanded li {
+	line-height: 2em;
+	}
+
+.responsesexpanded a:hover {
+	color: #CCE848;
+	transition: 0.5s;
+}
+
+.codeacademy {
 	position: relative;
 	flex: 1;
 	background-color: #CCE848;
 	cursor: pointer;
 }
 
-ul, li {
+.codeexpanded {
+	bottom: 55vh;
+	left: 50%;
 	display: none;
+	width: 40vw;
+	height: 15vh;
+	z-index: 1;
+	padding-top: 1.5em;
+	padding-left: 1em;
+	background-color: #CCE848;
+	position: absolute;
+}
+
+.codeexpanded li {
+	line-height: 2em;
+}
+
+.codeexpanded a:hover {
+	color: #105e8c;
+	transition: 0.5s;
 }
