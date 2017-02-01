@@ -71,7 +71,7 @@ div {
 
 .projectsexpanded {
 	bottom: 48vh;
-	left: 50%;
+	left: 53.75%;
 	display: none;
 	width: 40vw;
 	height: 25vh;
@@ -158,11 +158,11 @@ div {
 }
 
 .codeexpanded {
-	bottom: 55vh;
-	left: 50%;
+	bottom: 50vh;
+	left: 55%;
 	display: none;
-	width: 40vw;
-	height: 15vh;
+	width: 35vw;
+	height: 16vh;
 	z-index: 1;
 	padding-top: 1.5em;
 	padding-left: 1em;

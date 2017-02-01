@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Distribution of Friends at College</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700" rel="stylesheet">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 70vh;
+        width: 80vw;
+        margin-bottom: 3em;
+        margin-left: 4em;
+        padding: 0;
+        background-color: #efefef;
+      }
+
+      h1 {
+        font-family: 'Open Sans Condensed', sans-serif;
+        text-align: center;
+        font-weight: 300;
+        margin-top: 2em;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div>
+    <h1>Distribution of Friends at College</h1>
+    </div>
+    <div id="map"></div>
+    <script>
+      var map;
+      
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 43.0984729, lng: -75.2981413},
+          zoom: 6,
+          styles: [{"featureType":"administrative","elementType":"labels","stylers":[{"hue":"#00ff0b"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#dbd3d3"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#25ced7"}]}]
+          });
+
+        var home = new google.maps.LatLng(43.2137258,-77.4374656);
+        var school = new google.maps.LatLng(41.8259987,-71.4096483);
+        var xilin = new google.maps.LatLng(42.3770068,-71.1188488);
+        var ishitri = new google.maps.LatLng(43.0008132,-78.7911584);
+        var sara = new google.maps.LatLng(42.7960959,-77.8258916);
+        var katie = new google.maps.LatLng(42.0893593,-75.9718936);
+
+        var homemarker = new google.maps.Marker({
+            position: home,
+            title:"Home",
+        });
+
+        var homeString = '<h3>Home</h3>' + '<p>Webster, NY</p>';
+        var homewindow = new google.maps.InfoWindow ({
+          content: homeString
+        });
+
+        homemarker.addListener('click', function() {
+           homewindow.open(map, homemarker);
+         });
+
+        var schoolmarker = new google.maps.Marker({
+            position: school,
+            title:"School"
+        });
+
+        var schoolString = '<h3>Emily</h3>' + '<p>RISD, Providence, RI</p>';
+        var schoolwindow = new google.maps.InfoWindow ({
+          content: schoolString
+        });
+
+        schoolmarker.addListener('click', function() {
+           schoolwindow.open(map, schoolmarker);
+         });
+
+        var xilinmarker = new google.maps.Marker({
+            position: xilin,
+            title:"Xilin"
+        });
+
+        var xilinString = '<h3>Xilin</h3>' + '<p>Harvard University, Cambridge, MA</p>';
+        var xilinwindow = new google.maps.InfoWindow ({
+          content: xilinString
+        });
+
+        xilinmarker.addListener('click', function() {
+           xilinwindow.open(map, xilinmarker);
+         });
+
+        var ishitrimarker = new google.maps.Marker({
+            position: ishitri,
+            title:"Ishitri"
+        });
+
+        var ishitriString = '<h3>Ishitri</h3>' + '<p>University at Buffalo, Buffalo, NY</p>';
+        var ishitriwindow = new google.maps.InfoWindow ({
+          content: ishitriString
+        });
+
+        ishitrimarker.addListener('click', function() {
+           ishitriwindow.open(map, ishitrimarker);
+         });
+
+        var saramarker = new google.maps.Marker({
+            position: sara,
+            title:"Sara"
+        });
+
+        var saraString = '<h3>Sara</h3>' + '<p>SUNY Geneseo, Geneseo, NY</p>';
+        var sarawindow = new google.maps.InfoWindow ({
+          content: saraString
+        });
+
+        saramarker.addListener('click', function() {
+           sarawindow.open(map, saramarker);
+         });
+
+        var katiemarker = new google.maps.Marker({
+            position: katie,
+            title:"Katie"
+        });
+
+        var katieString = '<h3>Katie</h3>' + '<p>SUNY Binghamton, Binghamton, NY</p>';
+        var katiewindow = new google.maps.InfoWindow ({
+          content: katieString
+        });
+
+        katiemarker.addListener('click', function() {
+           katiewindow.open(map, katiemarker);
+         });
+
+        // To add the marker to the map, call setMap();
+        homemarker.setMap(map);
+        schoolmarker.setMap(map);
+        xilinmarker.setMap(map);
+        ishitrimarker.setMap(map);
+        saramarker.setMap(map);
+        katiemarker.setMap(map);
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp_ANf1naEX61vyuL4PxnkoF-73PxXoPI&callback=initMap"
+    async defer></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+.left {
+	float: left;
+	margin-left: 30vw;
+}
+
+.right {
+	float: right;
+	margin-right: 30vw;
+	width: 3.5em;
+	height: 3em;
+	cursor: pointer;
+}
+
+.appleclick{
+	background-color: red;
+}
+
+.bananaclick{
+	background-color: yellow;
+}
+
+.pearclick{
+	background-color: green;
+}
+
+button {
+	width: 6em;
+	height: 3em;
+	cursor: pointer;
+}
