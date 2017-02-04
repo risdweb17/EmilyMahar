@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bookshelf</title>
+        <meta name="Bookshelf" content="Catalog your personal library">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://use.fontawesome.com/98e787cea0.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Fauna+One" rel="stylesheet">
+        <link rel="stylesheet" href="home-css/style.css">
+
+    </head>
+    <body>
+
+    <div class="nav-container">
+        <section class="header">
+            <a href="homepage.html"><h1><i class="fa fa-book" aria-hidden="true"></i> Bookshelf</h1></a>
+        </section>
+
+        <section class="navigation">
+            <button class="button">
+            <h3>Library <i class="fa fa-sort-desc" aria-hidden="true"></i></h3>
+            </button>
+            <div class="dropdown">
+            <p><a href="homepage.html">All</a></p>
+            <p><a href="read.html">Read</a></p>
+            <p><a href="to-read.html">To-Read</a></p>
+            </div>
+        </section>
+        </div>
+        
+        <div class="sitebody">
+
+
+            <div id="books">
+            <div class="filter-bar">
+              <input class="search" placeholder="Search" />
+            <!-- class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by. -->
+              <button class="sort asc" data-sort="title">
+                Sort by title
+              </button>
+              <button class="sort" data-sort="author">
+                Sort by author
+              </button>
+              </div>
+
+              <div class="list">
+                <div class="book">
+                    <p class="title">Jane Eyre</p>
+                    <p class="author">Bronte, Charlotte</p>
+                    <a href="#janemodal"><img id="jane" class="mainimg" src="img/JaneEyre.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">Wild</p>
+                    <p class="author">Strayed, Cheryl</p>
+                    <a href="#wildmodal"><img id="wild" class="mainimg" src="img/Wild.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">To Kill a Mockingbird</p>
+                    <p class="author">Lee, Harper</p>
+                    <a href="#mockmodal"><img id="mock" class="mainimg" src="img/Mockingbird.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">Pride and Prejudice</p>
+                    <p class="author">Austen, Jane</p>
+                    <a href="#pridemodal"><img id="pride" class="mainimg" src="img/Pride.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">Salt to the Sea</p>
+                    <p class="author">Sepetys, Ruta</p>
+                    <a href="#saltmodal"><img id="salt" class="mainimg" src="img/Salt.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">Fantastic Beasts and Where to Find Them</p>
+                    <p class="author">Rowling, J.K.</p>
+                    <a href="#fantasticmodal"><img id="fantastic" class="mainimg" src="img/Fantastic.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">The Midnight Queen</p>
+                    <p class="author">Izzo Hunter, Sylvia</p>
+                    <a href="#midnightmodal"><img id="midnight" class="mainimg" src="img/Midnight.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">Mr. Penumbra's 24-Hour Bookstore</p>
+                    <p class="author">Sloan, Robin</p>
+                    <a href="#penumbramodal"><img id="penumbra" class="mainimg" src="img/Penumbra.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">A Game of Thrones</p>
+                    <p class="author">Martin, George R.R.</p>
+                    <a href="#thronesmodal"><img id="thrones" class="mainimg" src="img/Thrones.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">1984</p>
+                    <p class="author">Orwell, George</p>
+                    <a href="#1984modal"><img id="1984" class="mainimg" src="img/1984.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">The Night Circus</p>
+                    <p class="author">Morgenstern, Erin</p>
+                    <a href="#circusmodal"><img id="circus" class="mainimg" src="img/Circus.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">Quiet: The Power of Introverts in a World That Can't Stop Talking</p>
+                    <p class="author">Cain, Susan</p>
+                    <a href="#quietmodal"><img class="mainimg" src="img/Quiet.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">Uprooted</p>
+                    <p class="author">Novik, Naomi</p>
+                    <a href="#uprootedmodal"><img class="mainimg" src="img/Uprooted.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">A Darker Shade of Magic</p>
+                    <p class="author">Schwab,V.E.</p>
+                    <a href="#magicmodal"><img class="mainimg" src="img/Magic.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">The Girl on the Train</p>
+                    <p class="author">Hawkins, Paula</p>
+                    <a href="#trainmodal"><img class="mainimg" src="img/Train.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">House of Leaves</p>
+                    <p class="author">Danielewski, Mark Z. </p>
+                    <a href="#leavesmodal"><img class="mainimg" src="img/Leaves.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">The Ocean at the End of the Lane</p>
+                    <p class="author">Gaiman, Neil</p>
+                    <a href="#oceanmodal"><img class="mainimg" src="img/Ocean.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <!-- MODALS -->
+
+        <div id="janemodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="jane" class="modalimg" src="img/JaneEyre.jpg">
+                    <h2>Jane Eyre by Charlotte Bronte</h2>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> My absolute favorite classic, I've read and reread it countless times. Jane is such a wonderful character who's story I devoured. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <p>A gothic masterpiece of tempestuous passions and dark secrets, Charlotte Brontë's Jane Eyre is edited with an introduction and notes by Stevie Davis in Penguin Classics.<p>
+
+                    <p>Charlotte Brontë tells the story of orphaned Jane Eyre, who grows up in the home of her heartless aunt, enduring loneliness and cruelty. This troubled childhood strengthens Jane's natural independence and spirit - which prove necessary when she finds employment as a governess to the young ward of Byronic, brooding Mr Rochester. As her feelings for Rochester develop, Jane gradually uncovers Thornfield Hall's terrible secret, forcing her to make a choice. Should she stay with Rochester and live with the consequences, or follow her convictions - even if it means leaving the man she loves? A novel of intense power and intrigue, Jane Eyre dazzled readers with its passionate depiction of a woman's search for equality and freedom.</p>
+                    <a href="JEbooklanding.html" target="_blank"><h4>READ NOW</h4></a>
+            </div>
+        </div>
+
+        <div id="wildmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="wild" class="modalimg" src="img/Wild.jpg">
+                    <h2>Wild by Cheryl Strayed</h2>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> An incredible story of the emotionally raw, and at some points scary journey that Strayed pushed herself to endure to emerge a different person. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <p>At twenty-two, Cheryl Strayed thought she had lost everything. In the wake of her mother’s death, her family scattered and her own marriage was soon destroyed. Four years later, with nothing more to lose, she made the most impulsive decision of her life. With no experience or training, driven only by blind will, she would hike more than a thousand miles of the Pacific Crest Trail from the Mojave Desert through California and Oregon to Washington State — and she would do it alone.</p>
+                    <p>Told with suspense and style, sparkling with warmth and humor, Wild powerfully captures the terrors and pleasures of one young woman forging ahead against all odds on a journey that maddened, strengthened, and ultimately healed her.<p>
+                    <a href="http://www.barnesandnoble.com/w/wild-cheryl-strayed/1110776475?ean=9780307476074" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+        <div id="mockmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="mock" class="modalimg" src="img/Mockingbird.jpg">
+                    <h2>To Kill a Mockingbird by Harper Lee</h2>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> If you never had to read this book for a class in high school, you should really read it by choice. It's a lifechanging book that with stay with you forever after the last page. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <p>The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it, To Kill A Mockingbird became both an instant bestseller and a critical success when it was first published in 1960. It went on to win the Pulitzer Prize in 1961 and was later made into an Academy Award-winning film, also a classic.</p>
+
+                    <p>Compassionate, dramatic, and deeply moving, To Kill A Mockingbird takes readers to the roots of human behavior - to innocence and experience, kindness and cruelty, love and hatred, humor and pathos. Now with over 18 million copies in print and translated into forty languages, this regional story by a young Alabama woman claims universal appeal. Harper Lee always considered her book to be a simple love story. Today it is regarded as a masterpiece of American literature.</p>
+                    <a href="http://www.barnesandnoble.com/w/to-kill-a-mockingbird-harper-lee/1100151011?ean=9780446310789" target="_blank"><h4>PURCHASE</h4></a> 
+            </div>
+        </div>
+
+        <div id="pridemodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="pride" class="modalimg" src="img/Pride.jpg">
+                    <h2>Pride and Prejudice by Jane Austen</h2>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> Meet your new favorite female character. If you didn't think a classic novel could make you laugh, think again. Austen wrote with such progressive wit and wisdom for her time. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <p>When Elizabeth Bennet first meets eligible bachelor Fitzwilliam Darcy, she thinks him arrogant and conceited, while he struggles to remain indifferent to her good looks and lively mind. When she later discovers that Darcy has involved himself in the troubled relationship between his friend Bingley and her beloved sister Jane, she is determined to dislike him more than ever. In the sparkling comedy of manners that follows, Jane Austen shows the folly of judging by first impressions and superbly evokes the friendships, gossip and snobberies of provincial middle-class life.</p>
+                    <a href="booklanding.html" target="_blank"><h4>READ NOW</h4></a> 
+            </div>
+        </div>
+
+        <div id="saltmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="salt" class="modalimg" src="img/Salt.jpg">
+                    <h2>Salt to the Sea by Ruta Sepetys</h2>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> An incredible story. Sepety's writing is both beautiful and heartbreaking. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <p>Winter, 1945. Four teenagers. Four secrets.</p>
+
+                    <p>Each one born of a different homeland; each one hunted, and haunted, by tragedy, lies…and war.</p>
+
+                    <p>As thousands of desperate refugees flock to the coast in the midst of a Soviet advance, four paths converge, vying for passage aboard the Wilhelm Gustloff, a ship that promises safety and freedom.</p>
+
+                    <p>Yet not all promises can be kept.</p>
+
+                    <p>Inspired by the single greatest tragedy in maritime history, bestselling and award-winning author Ruta Sepetys (Between Shades of Gray) lifts the veil on a shockingly little-known casualty of World War II. An illuminating and life-affirming tale of heart and hope.</p>
+                    <a href="http://www.barnesandnoble.com/w/salt-to-the-sea-ruta-sepetys/1121907650?ean=9780399160301" target="_blank"><h4>PURCHASE</h4></a> 
+            </div>
+        </div>
+
+        <div id="fantasticmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="fantastic" class="modalimg" src="img/Fantastic.jpg">
+                    <h2>Fantastic Beasts and Where to Find Them: The Original Screenplay by J.K. Rowling</h2>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> Although not a novel, but instead a screenplay, Rowling's world retains its magic. Whether you've seen the film or not, the screenplay is just as emmersive, and possibly even more imaginative than the final product. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <p>J.K. Rowling's screenwriting debut is captured in this exciting hardcover edition of the Fantastic Beasts and Where to Find Them screenplay.</p>
+
+                    <p>When Magizoologist Newt Scamander arrives in New York, he intends his stay to be just a brief stopover. However, when his magical case is misplaced and some of Newt's fantastic beasts escape, it spells trouble for everyone…</p>
+
+                    <p>Fantastic Beasts and Where to Find Them marks the screenwriting debut of J.K. Rowling, author of the beloved and internationally bestselling Harry Potter books. Featuring a cast of remarkable characters, this is epic, adventure-packed storytelling at its very best.</p>
+
+                    <p>Whether an existing fan or new to the wizarding world, this is a perfect addition to any reader's bookshelf.</p>
+                    <a href="http://www.barnesandnoble.com/w/fantastic-beasts-and-where-to-find-them-j-k-rowling/1123722904?ean=9781338109061" target="_blank"><h4>PURCHASE</h4></a>
+
+            </div>
+        </div>
+
+        <div id="midnightmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="midnight" class="modalimg" src="img/Midnight.jpg">
+                    <h2>The Midnight Queen by Sylvia Izzo Hunter</h2>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> A well crafted and magical story that will keep you hooked until the very end. A hidden gem in the fantasy genre. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <p>In the hallowed halls of Oxford’s Merlin College, the most talented—and highest born—sons of the Kingdom of Britain are taught the intricacies of magickal theory. But what dazzles can also destroy, as Gray Marshall is about to discover…</p>
+ 
+                    <p>Gray’s deep talent for magick has won him a place at Merlin College. But when he accompanies four fellow students on a mysterious midnight errand that ends in disaster and death, he is sent away in disgrace—and without a trace of his power. He must spend the summer under the watchful eye of his domineering professor, Appius Callender, working in the gardens of Callender’s country estate and hoping to recover his abilities. And it is there, toiling away on a summer afternoon, that he meets the professor’s daughter.</p>
+                     
+                    <p>Even though she has no talent of her own, Sophie Callender longs to be educated in the lore of magick. Her father has kept her isolated at the estate and forbidden her interest; everyone knows that teaching arcane magickal theory to women is the height of impropriety. But against her father’s wishes, Sophie has studied his ancient volumes on the subject. And in the tall, stammering, yet oddly charming Gray, she finally finds someone who encourages her interest and awakens new ideas and feelings.</p>
+                     
+                    <p>Sophie and Gray’s meeting touches off a series of events that begins to unravel secrets about each of them. And after the king’s closest advisor pays the professor a closed-door visit, they begin to wonder if what Gray witnessed in Oxford might be even more sinister than it seemed. They are determined to find out, no matter the cost…</p>
+                    <a href="http://www.barnesandnoble.com/w/the-midnight-queen-sylvia-izzo-hunter/1118663029?ean=9780425272459" target="_blank"><h4>PURCHASE</h4></a>
+
+            </div>
+        </div>
+
+        <div id="penumbramodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="penumbra" class="modalimg" src="img/Penumbra.jpg">
+                    <h2>Mr. Penumbra's 24-Hour Bookstore by Robin Sloan</h2>
+                    <p>The Great Recession has shuffled Clay Jannon away from life as a San Francisco web-design drone and into the aisles of Mr. Penumbra’s 24-Hour Bookstore. But after a few days on the job, Clay discovers that the store is more curious than either its name or its gnomic owner might suggest. The bookstore’s secrets extend far beyond its walls.</p>
+                    <a href="http://bn.com" target="_blank"><h4>PURCHASE</h4></a>
+
+            </div>
+        </div>
+
+        <div id="thronesmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="thrones" class="modalimg" src="img/Thrones.jpg">
+                    <h2>A Game of Thrones by George R.R. Martin</h2>
+                    <p>In A Game of Thrones, George R.R. Martin has created a genuine masterpiece, bringing together the best the genre has to offer. Mystery, intrigue, romance, and adventure fill the pages of the first volume in an epic series sure to delight fantansy fans everywhere.</p>
+
+                    <p>In a land where summers can last decades and winters a lifetime, trouble is brewing. The cold is returning, and in the frozen wastes of the north of Winterfell, sinister and supernatural forces are massing beyond the kingdom's protective Wall. At the center of the conflict lie the Starks of Winterfell, a family as harsh and unyielding as the land they were born to. Sweeping from a land of brutal cold to a distant summertime kingdom of epicurean plenty, here is a tale of lords and ladies, soldiers and sorcerers, assassins and bastards, who come together in a time of grim omens. Amid plots and counterplots, tragedy and betrayal, victory and terror, the fate of the Starks, their allies, and their enemies hangs perilously in the balance, as each endeavors to win that deadliest of conflicts: the game of thrones.</p>
+                    <a href="http://bn.com" target="_blank"><h4>PURCHASE</h4></a>
+
+            </div>
+        </div>
+
+        <div id="1984modal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="1984" class="modalimg" src="img/1984.jpg">
+                    <h2>1984 by George Orwell</h2>
+                    <p>The year 1984 has come and gone, but George Orwell's prophetic, nightmarish vision in 1949 of the world we were becoming is timelier than ever. 1984 is still the great modern classic of "negative utopia" -a startlingly original and haunting novel that creates an imaginary world that is completely convincing, from the first sentence to the last four words. No one can deny the novel's hold on the imaginations of whole generations, or the power of its admonitions -a power that seems to grow, not lessen, with the passage of time.</p>
+                    <a href="http://bn.com" target="_blank"><h4>PURCHASE</h4></a>
+
+            </div>
+        </div>
+
+        <div id="circusmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="circus" class="modalimg" src="img/Circus.jpg">
+                    <h2>The Night Circus by Erin Morgenstern</h2>
+                    <p>The circus arrives without warning. No announcements precede it, no paper notices plastered on lampposts and billboards. It is simply there, when yesterday it was not.<p> 
+
+                    <p>Within these nocturnal black-and-white striped tents awaits an utterly unique, a feast for the senses, where one can get lost in a maze of clouds, meander through a lush garden made of ice, stare in wonderment as the tattooed contortionist folds herself into a small glass box, and become deliciously tipsy from the scents of caramel and cinnamon that waft through the air.</p> 
+
+                    <p>Welcome to Le Cirque des Rêves.</p> 
+
+                    <p>Beyond the smoke and mirrors, however, a fierce competition is under way--a contest between two young illusionists, Celia and Marco, who have been trained since childhood to compete in a "game" to which they have been irrevocably bound by their mercurial masters. Unbeknownst to the players, this is a game in which only one can be left standing, and the circus is but the stage for a remarkable battle of imagination and will.</p> 
+
+                    <p>As the circus travels around the world, the feats of magic gain fantastical new heights with every stop. The game is well under way and the lives of all those involved--the eccentric circus owner, the elusive contortionist, the mystical fortune-teller, and a pair of red-headed twins born backstage among them--are swept up in a wake of spells and charms.</p> 
+
+                    <p>But when Celia discovers that Marco is her adversary, they begin to think of the game not as a competition but as a wonderful collaboration. With no knowledge of how the game must end, they innocently tumble headfirst into love. A deep, passionate, and magical love that makes the lights flicker and the room grow warm whenever they so much as brush hands.</p> 
+
+                    <p>Their masters still pull the strings, however, and this unforeseen occurrence forces them to intervene with dangerous consequences, leaving the lives of everyone from the performers to the patrons hanging in the balance.</p> 
+
+                    <p>Both playful and seductive, The Night Circus, Erin Morgenstern's spell-casting debut, is a mesmerizing love story for the ages.</p>
+                    <a href="http://bn.com" target="_blank"><h4>PURCHASE</h4></a>
+
+            </div>
+        </div>
+
+        <div id="quietmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="quiet" class="modalimg" src="img/Quiet.jpg">
+                    <h2>Quiet: The Power of Introverts in a World That Can't Stop Talking by Susan Cain</h2>
+                    <p>At least one-third of the people we know are introverts. They are the ones who prefer listening to speaking, reading to partying; who innovate and create but dislike self-promotion; who favor working on their own over brainstorming in teams. Although they are often labeled "quiet," it is to introverts that we owe many of the great contributions to society--from van Gogh’s sunflowers to the invention of the personal computer.</p>
+
+                    <p>Passionately argued, impressively researched, and filled with indelible stories of real people, Quiet shows how dramatically we undervalue introverts, and how much we lose in doing so. Taking the reader on a journey from Dale Carnegie’s birthplace to Harvard Business School, from a Tony Robbins seminar to an evangelical megachurch, Susan Cain charts the rise of the Extrovert Ideal in the twentieth century and explores its far-reaching effects. She talks to Asian-American students who feel alienated from the brash, backslapping atmosphere of American schools. She questions the dominant values of American business culture, where forced collaboration can stand in the way of innovation, and where the leadership potential of introverts is often overlooked. And she draws on cutting-edge research in psychology and neuroscience to reveal the surprising differences between extroverts and introverts.</p>
+
+                    <p>Perhaps most inspiring, she introduces us to successful introverts--from a witty, high-octane public speaker who recharges in solitude after his talks, to a record-breaking salesman who quietly taps into the power of questions. Finally, she offers invaluable advice on everything from how to better negotiate differences in introvert-extrovert relationships to how to empower an introverted child to when it makes sense to be a "pretend extrovert."</p>
+
+                    <p>This extraordinary book has the power to permanently change how we see introverts and, equally important, how introverts see themselves.</p>
+                    <a href="http://bn.com" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+        <div id="uprootedmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="uprooted" class="modalimg" src="img/Uprooted.jpg">
+                    <h2>Uprooted by Naomi Novik</h2>
+                    <p>Agnieszka loves her valley home, her quiet village, the forests and the bright shining river. But the corrupted Wood stands on the border, full of malevolent power, and its shadow lies over her life.</p>
+
+                    <p>Her people rely on the cold, driven wizard known only as the Dragon to keep its powers at bay. But he demands a terrible price for his help: one young woman handed over to serve him for ten years, a fate almost as terrible as falling to the Wood.</p>
+
+                    <p>The next choosing is fast approaching, and Agnieszka is afraid. She knows—everyone knows—that the Dragon will take Kasia: beautiful, graceful, brave Kasia, all the things Agnieszka isn’t, and her dearest friend in the world. And there is no way to save her.</p>
+
+                    <p>But Agnieszka fears the wrong things. For when the Dragon comes, it is not Kasia he will choose.</p>
+                    <a href="http://bn.com" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+        <div id="magicmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="magic" class="modalimg" src="img/Magic.jpg">
+                    <h2>A Darker Shade of Magic by V.E. Schwab</h2>
+                    <p>Kell is one of the last travelers--magicians with a rare, coveted ability to travel between parallel universes connected by one magical city.</p> 
+
+                    <p>There's Grey London, dirty and boring, without any magic, and with one mad King--George III. Red London, where life and magic are revered--and where Kell was raised alongside Rhy Maresh, the roguish heir to a flourishing empire. White London--a place where people fight to control magic and the magic fights back, draining the city to its very bones. And once upon a time, there was Black London. But no one speaks of that now.</p>
+
+                    <p>Officially, Kell is the Red traveler, ambassador of the Maresh empire, carrying the monthly correspondences between the royals of each London. Unofficially, Kell is a smuggler, servicing people willing to pay for even the smallest glimpses of a world they'll never see. It's a defiant hobby with dangerous consequences, which Kell is now seeing firsthand.</p>
+
+                    <p>Fleeing into Grey London, Kell runs into Delilah Bard, a cut-purse with lofty aspirations. She robs him, saves him from a deadly enemy, and finally forces Kell to spirit her to another world for a proper adventure.</p> 
+
+                    <p>Now perilous magic is afoot, and treachery lurks at every turn. To save all of the worlds, they'll first need to stay alive.</p>
+                    <a href="http://bn.com" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+        <div id="trainmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="magic" class="modalimg" src="img/Train.jpg">
+                    <h2>The Girl on the Train by Paula Hawkins</h2>
+                    <p>The debut psychological thriller that will forever change the way you look at other people's lives.</p>
+
+                    <p>EVERY DAY THE SAME</p>
+                    <p>Rachel takes the same commuter train every morning and night. Every day she rattles down the track, flashes past a stretch of cozy suburban homes, and stops at the signal that allows her to daily watch the same couple breakfasting on their deck. She’s even started to feel like she knows them. Jess and Jason, she calls them. Their life—as she sees it—is perfect. Not unlike the life she recently lost.</p>
+
+                    <p>UNTIL TODAY</p>
+                    <p>And then she sees something shocking. It’s only a minute until the    train moves on, but it’s enough. Now everything’s changed. Unable to keep it to herself, Rachel goes to the police. But is she really as unreliable as they say? Soon she is deeply entangled not only in the investigation but in the lives of everyone involved. Has she done more harm than good?</p>
+                    <a href="http://bn.com" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+        <div id="leavesmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="leaves" class="modalimg" src="img/Leaves.jpg">
+                    <h2>House of Leaves by Mark Z. Danielewski</h2>
+                    <p>Years ago, when House of Leaves was first being passed around, it was nothing more than a badly bundled heap of paper, parts of which would occasionally surface on the Internet. No one could have anticipated the small but devoted following this terrifying story would soon command. Starting with an odd assortment of marginalized youth—musicians, tattoo artists, programmers, strippers, environmentalists, and adrenaline junkies—the book eventually made its way into the hands of older generations, who not only found themselves in those strangely arranged pages but also discovered a way back into the lives of their estranged children.</p>
+
+                    <p>Now, for the first time, this astonishing novel is made available in book form, complete with the original colored words, vertical footnotes, and newly added second and third appendices.</p>
+
+                    <p>The story remains unchanged, focusing on a young family that moves into a small home on Ash Tree Lane where they discover something is terribly wrong: their house is bigger on the inside than it is on the outside.</p>
+
+                    <p>Of course, neither Pulitzer Prize-winning photojournalist Will Navidson nor his companion Karen Green was prepared to face the consequences of that impossibility, until the day their two little children wandered off and their voices eerily began to return another story—of creature darkness, of an ever-growing abyss behind a closet door, and of that unholy growl which soon enough would tear through their walls and consume all their dreams.</p>
+                    <a href="http://bn.com" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+        <div id="oceanmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="ocean" class="modalimg" src="img/Ocean.jpg">
+                    <h2>The Ocean at the End of the Lane by Neil Gaiman</h2>
+                    <p>Sussex, England. A middle-aged man returns to his childhood home to attend a funeral. Although the house he lived in is long gone, he is drawn to the farm at the end of the road, where, when he was seven, he encountered a most remarkable girl, Lettie Hempstock, and her mother and grandmother. He hasn't thought of Lettie in decades, and yet as he sits by the pond (a pond that she'd claimed was an ocean) behind the ramshackle old farmhouse, the unremembered past comes flooding back. And it is a past too strange, too frightening, too dangerous to have happened to anyone, let alone a small boy.</p>
+
+                    <p>Forty years earlier, a man committed suicide in a stolen car at this farm at the end of the road. Like a fuse on a firework, his death lit a touchpaper and resonated in unimaginable ways. The darkness was unleashed, something scary and thoroughly incomprehensible to a little boy. And Lettie—magical, comforting, wise beyond her years—promised to protect him, no matter what.</p>
+
+                    <p>A groundbreaking work from a master, The Ocean at the End of the Lane is told with a rare understanding of all that makes us human, and shows the power of stories to reveal and shelter us from the darkness inside and out. It is a stirring, terrifying, and elegiac fable as delicate as a butterfly's wing and as menacing as a knife in the dark.</p>
+                    <a href="http://bn.com" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+        <!-- <footer>
+        <div class="sort">
+            <h5>Sort by</h5>
+        </div>
+            <select class="select">
+              <option value="None">None</option>
+              <option value="Title">Title</option>
+              <option value="Author">Author</option>
+            </select>
+            
+        <div class="form">
+            <form>
+              <input type="radio" name="order" value="asc" checked> asc.
+              <input type="radio" name="order" value="desc"> desc.
+            </form>
+         </div>
+         </footer> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+</html>

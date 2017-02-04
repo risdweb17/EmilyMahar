@@ -21,12 +21,14 @@ h3 {
 	float: right;
 	margin-top: 1.5em;
 	margin-right: 1em;
+	margin-left: 0;
 }
 
 .container {
 	background-color: #c6dcff;
 	width: 100vw;
 	height: 12vh;
+	margin-left: 0;
 
 }
 
@@ -46,6 +48,7 @@ h3 {
 	background-color: #c6dcff;
 	width: 100vw;
 	height: auto;
+	margin-left: 0;
 }
 
 button {
@@ -54,6 +57,7 @@ button {
 	display: block;
 	width: 80px;
 	height: 80px;
+	margin-left: 0;
 
 }
 
