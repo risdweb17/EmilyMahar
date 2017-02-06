@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>Bookshelf</title>
-        <meta name="Bookshelf" content="Catalog your personal library">
+        <meta name="Bookshelf" content="Curated book recs from all genres!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://use.fontawesome.com/98e787cea0.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Fauna+One" rel="stylesheet">
         <link rel="stylesheet" href="home-css/style.css">
+        <script src="js/myscript.js"></script>
 
     </head>
     <body>
@@ -19,13 +20,42 @@
         </section>
 
         <section class="navigation">
-            
+
+            <button class="library menu" id="library"><h3>Library <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+
+            <button class="genres menu" id="genres"><h3>Genres <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+
+            <button class="menu" id="lists"><h3>Lists</h3></button>
+            <button class="menu" id="recs"><h3>Recommendations</h3></button>
+
+
+
+            <div class="sublibrary">
+            <ul>
+                <li><a href="read.html">Read</a></li>
+                <li><a href="to-read.html">To-Read</a></li>
+            </ul>
+            </div>
+
+            <div class="subgenres">
+            <ul>
+                <li><a href="childrens.html">Children's</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="non-ficiton.html">Non-Fiction</a></li>
+                <li><a href="ya.html">Young Adult</a></li>
+            </ul>
+            </div>
+
+            <i id="up" class="fa fa-caret-up" aria-hidden="true"></i>   
 
 
         </section>
         </div>
         
         <div class="sitebody">
+
+            <h2>Children's</h2>
+            <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="childrens-fantasy.html">Fantasy</a></p>
 
 
             <div id="books">
@@ -40,13 +70,13 @@
               </button>
               </div>
 
-              <div class="list">
+            <div class="list">
                <div class="book">
                     <p class="title">Fantastic Beasts and Where to Find Them</p>
                     <p class="author">Rowling, J.K.</p>
                     <a href="#fantasticmodal"><img id="fantastic" class="mainimg" src="img/Fantastic.jpg"></a>
                 </div>
-                </div>
+            </div>
         </div>
     </div>
 
@@ -56,7 +86,9 @@
 
                     <img id="fantastic" class="modalimg" src="img/Fantastic.jpg">
                     <h2>Fantastic Beasts and Where to Find Them: The Original Screenplay by J.K. Rowling</h2>
+                    <hr>
                     <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> Although not a novel, but instead a screenplay, Rowling's world retains its magic. Whether you've seen the film or not, the screenplay is just as emmersive, and possibly even more imaginative than the final product. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
                     <p>J.K. Rowling's screenwriting debut is captured in this exciting hardcover edition of the Fantastic Beasts and Where to Find Them screenplay.</p>
 
                     <p>When Magizoologist Newt Scamander arrives in New York, he intends his stay to be just a brief stopover. However, when his magical case is misplaced and some of Newt's fantastic beasts escape, it spells trouble for everyone…</p>
@@ -64,6 +96,9 @@
                     <p>Fantastic Beasts and Where to Find Them marks the screenwriting debut of J.K. Rowling, author of the beloved and internationally bestselling Harry Potter books. Featuring a cast of remarkable characters, this is epic, adventure-packed storytelling at its very best.</p>
 
                     <p>Whether an existing fan or new to the wizarding world, this is a perfect addition to any reader's bookshelf.</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="childrens.html">Children's</a>, <a href="childrens-fantasy.html">Children's Fantasy</a></p>
+                    <hr>
                     <a href="http://www.barnesandnoble.com/w/fantastic-beasts-and-where-to-find-them-j-k-rowling/1123722904?ean=9781338109061" target="_blank"><h4>PURCHASE</h4></a>
 
             </div>
