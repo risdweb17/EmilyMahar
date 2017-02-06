@@ -12,11 +12,22 @@ p {
 	line-height: 2;
 }
 
+p a:hover {
+	color: #7a776e;
+}
+
 blockquote {
 	font-family: 'Fauna One', serif;
 	font-size: 10pt;
 	line-height: 2;
 	font-style: italic;
+	color: #7a776e
+}
+
+button, input {
+	font-family: 'Fauna One', serif;
+	color: #3d5156;
+	margin-right: 1em;
 }
 
 h1 {
@@ -67,8 +78,10 @@ a:hover {
 }
 
 i {
-	display: inline;
+	display: inline-block;
 	color: #3d5156;
+	margin: 0;
+	padding:;
 }
 
 img {
@@ -79,6 +92,41 @@ img {
 	width: 13em;
 	box-shadow: 10px 10px 30px #939085;
 	z-index: -1;
+}
+
+.filter-bar {
+	height: 1em;
+	width: 100vw;
+	left: 0;
+	align-items: center;
+	background-color: rgba(188, 183, 169, 0.9);
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	padding: 1em;
+}
+
+.menu {
+	display: inline;
+	margin: 1em;
+	cursor: pointer;
+	border-style: none;
+	background: transparent;
+}
+
+.sublibrary {
+	display: none;
+	width: 100vw;
+	background-color: rgba(188, 183, 169, 0.9);
+
+}
+
+#up {
+	display: none;
+}
+
+input.search button.sort {
+	float: right;
 }
 
 .mainimg {
@@ -119,6 +167,18 @@ img {
 	justify-content: flex-start;
 }
 
+button.sort {
+	border-style: none;
+	background-color: #efeade;
+}
+
+button.sort:hover {
+	border-style: none;
+	background-color: #3d5156;
+	color: #efeade;
+	transition: 0.5s;
+}
+
 .button {
     background-color: transparent; 
     padding: 1em;
@@ -130,31 +190,6 @@ img {
 	color: #efeade;
 }
 
-.dropdown {
-	display: none;
-	padding: 0.25em;
-    position: absolute;
-    background-color: rgba(188, 183, 169, 0.9);
-    min-width: 160px;
-    width: 100%;
-    overflow: auto;;
-}
-
-.dropdown a {
-    padding: 1em;
-    text-decoration: none;
-    display: block;
-    transition: 0.5s;
-}
-
-.dropdown a:hover {
-	background-color: rgba(239, 234, 222, 0.8);
-}
-
-.navigation:hover .dropdown {
-	display: block;
-}
-
 .navigation:hover .button {
 	color: rgba(239, 234, 222, 0.8);
 }
@@ -163,7 +198,7 @@ img {
 	position: scroll;
 	align-content: center;
 	align-items: center;
-	margin: 10em 1em 1em 1em;
+	margin: 10em 1em 5em 1em;
 }
 
 .welcomecontainer {
@@ -269,14 +304,6 @@ img {
 	color: #efeade;
 }
 
-footer {
-	width: 100vw;
-	display: flex;
-	clear: flex;
-	align-items: center;
-	position: sticky;
-}
-
 /*.sort {
 	flex: 1;
 	position: absolute;
@@ -304,10 +331,10 @@ footer {
 	display: none;
 }
 
-filter-bar {
-	position: fixed;
-	margin: 1em;
-	padding: 2em;
+
+.book{
+	display: inline-block;
+	margin-left: 0.35em;
 }
 
 @media screen and (max-width: 1030px){

@@ -6,25 +6,36 @@
         <meta name="Bookshelf" content="Catalog your personal library">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://use.fontawesome.com/98e787cea0.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/myscript.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Fauna+One" rel="stylesheet">
         <link rel="stylesheet" href="home-css/style.css">
     </head>
     <body>
 
+    
     <div class="nav-container">
         <section class="header">
             <a href="homepage.html"><h1><i class="fa fa-book" aria-hidden="true"></i> Bookshelf</h1></a>
         </section>
 
         <section class="navigation">
-            <button class="button">
-            <h3>Library <i class="fa fa-sort-desc" aria-hidden="true"></i></h3>
-            </button>
-            <div class="dropdown">
-            <p><a href="homepage.html">All</a></p>
-            <p><a href="]read.html">Read</a></p>
-            <p><a href="to-read.html">To-Read</a></p>
-            </div>
+
+            <button class="library menu" id="library"><h3>Library <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+            <button class="menu" id="genres"><h3>Genres <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+            <button class="menu" id="lists"><h3>Lists</h3></button>
+            <button class="menu" id="radar"><h3>Radar</h3></button>
+            <button class="menu" id="recs"><h3>Recs</h3></button>
+
+
+
+            <div class="sublibrary">
+            <h5><a href="read.html">Read</a></h5>
+            <h5><a href="to-read.html">To-Read</a></h5>
+
+            <i id="up" class="fa fa-caret-up" aria-hidden="true"></i>   
+
+
         </section>
         </div>
 
@@ -115,7 +126,7 @@
                     <p>A gothic masterpiece of tempestuous passions and dark secrets, Charlotte Brontë's Jane Eyre is edited with an introduction and notes by Stevie Davis in Penguin Classics.<p>
 
                     <p>Charlotte Brontë tells the story of orphaned Jane Eyre, who grows up in the home of her heartless aunt, enduring loneliness and cruelty. This troubled childhood strengthens Jane's natural independence and spirit - which prove necessary when she finds employment as a governess to the young ward of Byronic, brooding Mr Rochester. As her feelings for Rochester develop, Jane gradually uncovers Thornfield Hall's terrible secret, forcing her to make a choice. Should she stay with Rochester and live with the consequences, or follow her convictions - even if it means leaving the man she loves? A novel of intense power and intrigue, Jane Eyre dazzled readers with its passionate depiction of a woman's search for equality and freedom.</p>
-                    <a href="JEbooklanding.html" target="_blank"><h4>READ NOW</h4></a>
+                    <a href="http://bn.com" target="_blank"><h4>PURCHASE</h4></a>
             </div>
         </div>
 
@@ -151,7 +162,7 @@
                     <h2>Pride and Prejudice by Jane Austen</h2>
                     <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> Meet your new favorite female character. If you didn't think a classic novel could make you laugh, think again. Austen wrote with such progressive wit and wisdom for her time. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
                     <p>When Elizabeth Bennet first meets eligible bachelor Fitzwilliam Darcy, she thinks him arrogant and conceited, while he struggles to remain indifferent to her good looks and lively mind. When she later discovers that Darcy has involved himself in the troubled relationship between his friend Bingley and her beloved sister Jane, she is determined to dislike him more than ever. In the sparkling comedy of manners that follows, Jane Austen shows the folly of judging by first impressions and superbly evokes the friendships, gossip and snobberies of provincial middle-class life.</p>
-                    <a href="booklanding.html" target="_blank"><h4>READ NOW</h4></a> 
+                    <a href="http://bn.com" target="_blank"><h4>PURCHASE</h4></a> 
             </div>
         </div>
 
@@ -215,6 +226,7 @@
 
                     <img id="penumbra" class="modalimg" src="img/Penumbra.jpg">
                     <h2>Mr. Penumbra's 24-Hour Bookstore by Robin Sloan</h2>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> Any book-lover, computer geek, or seeker of a good story will devour this book! <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
                     <p>The Great Recession has shuffled Clay Jannon away from life as a San Francisco web-design drone and into the aisles of Mr. Penumbra’s 24-Hour Bookstore. But after a few days on the job, Clay discovers that the store is more curious than either its name or its gnomic owner might suggest. The bookstore’s secrets extend far beyond its walls.</p>
                     <a href="http://bn.com" target="_blank"><h4>PURCHASE</h4></a>
 
@@ -226,6 +238,7 @@
 
                     <img id="thrones" class="modalimg" src="img/Thrones.jpg">
                     <h2>A Game of Thrones by George R.R. Martin</h2>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> A rich and dense world of mystery and intrigue that creates an addicting world filled to the brim with intense characters, and intertwining plots. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
                     <p>In A Game of Thrones, George R.R. Martin has created a genuine masterpiece, bringing together the best the genre has to offer. Mystery, intrigue, romance, and adventure fill the pages of the first volume in an epic series sure to delight fantansy fans everywhere.</p>
 
                     <p>In a land where summers can last decades and winters a lifetime, trouble is brewing. The cold is returning, and in the frozen wastes of the north of Winterfell, sinister and supernatural forces are massing beyond the kingdom's protective Wall. At the center of the conflict lie the Starks of Winterfell, a family as harsh and unyielding as the land they were born to. Sweeping from a land of brutal cold to a distant summertime kingdom of epicurean plenty, here is a tale of lords and ladies, soldiers and sorcerers, assassins and bastards, who come together in a time of grim omens. Amid plots and counterplots, tragedy and betrayal, victory and terror, the fate of the Starks, their allies, and their enemies hangs perilously in the balance, as each endeavors to win that deadliest of conflicts: the game of thrones.</p>
@@ -239,6 +252,7 @@
 
                     <img id="1984" class="modalimg" src="img/1984.jpg">
                     <h2>1984 by George Orwell</h2>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> An eerily accurate prediction of the state of our world today, this book remains a must-read; a trailblazer of the modern dystopia genre.  <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
                     <p>The year 1984 has come and gone, but George Orwell's prophetic, nightmarish vision in 1949 of the world we were becoming is timelier than ever. 1984 is still the great modern classic of "negative utopia" -a startlingly original and haunting novel that creates an imaginary world that is completely convincing, from the first sentence to the last four words. No one can deny the novel's hold on the imaginations of whole generations, or the power of its admonitions -a power that seems to grow, not lessen, with the passage of time.</p>
                     <a href="http://bn.com" target="_blank"><h4>PURCHASE</h4></a>
 
@@ -250,6 +264,7 @@
 
                     <img id="circus" class="modalimg" src="img/Circus.jpg">
                     <h2>The Night Circus by Erin Morgenstern</h2>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> This book is beautiful and enchanting. It is magical realism at its finest!  <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
                     <p>The circus arrives without warning. No announcements precede it, no paper notices plastered on lampposts and billboards. It is simply there, when yesterday it was not.<p> 
 
                     <p>Within these nocturnal black-and-white striped tents awaits an utterly unique, a feast for the senses, where one can get lost in a maze of clouds, meander through a lush garden made of ice, stare in wonderment as the tattooed contortionist folds herself into a small glass box, and become deliciously tipsy from the scents of caramel and cinnamon that waft through the air.</p> 
@@ -288,8 +303,8 @@
          </div>
          </footer> -->
 
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-         <script src="js/myscript.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="js/myscript.js"></script>
 
     </body>
     </html>

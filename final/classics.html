@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bookshelf</title>
+        <meta name="Bookshelf" content="Catalog your personal library">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://use.fontawesome.com/98e787cea0.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Fauna+One" rel="stylesheet">
+        <link rel="stylesheet" href="home-css/style.css">
+
+    </head>
+    <body>
+
+   <div class="nav-container">
+        <section class="header">
+            <a href="homepage.html"><h1><i class="fa fa-book" aria-hidden="true"></i> Bookshelf</h1></a>
+        </section>
+
+        <section class="navigation">
+            
+
+
+        </section>
+        </div>
+        
+        <div class="sitebody">
+
+            <h2>Classics</h2>
+
+            <div id="books">
+            <div class="filter-bar">
+              <input class="search" placeholder="Search" />
+            <!-- class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by. -->
+              <button class="sort asc" data-sort="title">
+                Sort by title
+              </button>
+              <button class="sort" data-sort="author">
+                Sort by author
+              </button>
+              </div>
+
+
+
+              <div class="list">
+                <div class="book">
+                    <p class="title">Jane Eyre</p>
+                    <p class="author">Bronte, Charlotte</p>
+                    <a href="#janemodal"><img id="jane" class="mainimg" src="img/JaneEyre.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">To Kill a Mockingbird</p>
+                    <p class="author">Lee, Harper</p>
+                    <a href="#mockmodal"><img id="mock" class="mainimg" src="img/Mockingbird.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">Pride and Prejudice</p>
+                    <p class="author">Austen, Jane</p>
+                    <a href="#pridemodal"><img id="pride" class="mainimg" src="img/Pride.jpg"></a>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+                <!-- MODALS -->
+
+        <div id="janemodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="jane" class="modalimg" src="img/JaneEyre.jpg">
+                    <h2>Jane Eyre by Charlotte Bronte</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> My absolute favorite classic, I've read and reread it countless times. Jane is such a wonderful character who's story I devoured. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>A gothic masterpiece of tempestuous passions and dark secrets, Charlotte Brontë's Jane Eyre is edited with an introduction and notes by Stevie Davis in Penguin Classics.<p>
+
+                    <p>Charlotte Brontë tells the story of orphaned Jane Eyre, who grows up in the home of her heartless aunt, enduring loneliness and cruelty. This troubled childhood strengthens Jane's natural independence and spirit - which prove necessary when she finds employment as a governess to the young ward of Byronic, brooding Mr Rochester. As her feelings for Rochester develop, Jane gradually uncovers Thornfield Hall's terrible secret, forcing her to make a choice. Should she stay with Rochester and live with the consequences, or follow her convictions - even if it means leaving the man she loves? A novel of intense power and intrigue, Jane Eyre dazzled readers with its passionate depiction of a woman's search for equality and freedom.</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="classics.html">Classics</a></p>
+                    <hr>
+                    <a href="http://bn.com" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+        <div id="mockmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="mock" class="modalimg" src="img/Mockingbird.jpg">
+                    <h2>To Kill a Mockingbird by Harper Lee</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> If you never had to read this book for a class in high school, you should really read it by choice. It's a lifechanging book that with stay with you forever after the last page. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it, To Kill A Mockingbird became both an instant bestseller and a critical success when it was first published in 1960. It went on to win the Pulitzer Prize in 1961 and was later made into an Academy Award-winning film, also a classic.</p>
+
+                    <p>Compassionate, dramatic, and deeply moving, To Kill A Mockingbird takes readers to the roots of human behavior - to innocence and experience, kindness and cruelty, love and hatred, humor and pathos. Now with over 18 million copies in print and translated into forty languages, this regional story by a young Alabama woman claims universal appeal. Harper Lee always considered her book to be a simple love story. Today it is regarded as a masterpiece of American literature.</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="classics.html">Classics</a></a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/to-kill-a-mockingbird-harper-lee/1100151011?ean=9780446310789" target="_blank"><h4>PURCHASE</h4></a> 
+            </div>
+        </div>
+
+        <div id="pridemodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="pride" class="modalimg" src="img/Pride.jpg">
+                    <h2>Pride and Prejudice by Jane Austen</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> Meet your new favorite female character. If you didn't think a classic novel could make you laugh, think again. Austen wrote with such progressive wit and wisdom for her time. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>When Elizabeth Bennet first meets eligible bachelor Fitzwilliam Darcy, she thinks him arrogant and conceited, while he struggles to remain indifferent to her good looks and lively mind. When she later discovers that Darcy has involved himself in the troubled relationship between his friend Bingley and her beloved sister Jane, she is determined to dislike him more than ever. In the sparkling comedy of manners that follows, Jane Austen shows the folly of judging by first impressions and superbly evokes the friendships, gossip and snobberies of provincial middle-class life.</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="classics.html">Classics</a></p>
+                    <hr>
+                    <a href="http://bn.com" target="_blank"><h4>PURCHASE</h4></a> 
+            </div>
+        </div>
+
+
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+</html>

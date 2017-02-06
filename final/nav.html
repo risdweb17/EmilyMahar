@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bookshelf</title>
+        <meta name="Bookshelf" content="Curated book recs from all genres!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://use.fontawesome.com/98e787cea0.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Fauna+One" rel="stylesheet">
+       <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!-- <link rel="stylesheet" href="home-css/style.css"> -->
+
+        <style>
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu ul{
+            display: none;
+        }
+
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+        }
+        </style>
+    </head>
+    <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                Library<span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="homepage.html">All</a></li>
+                <li><a href="read.html">Read</a></li>
+                <li><a href="to-read.html">To-Read</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                Genres<span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu"><a id="fiction">Fiction</a>
+                    <ul class="fiction-submenu">
+                       <li><a href="fiction-contemporary.html">Contemporary</a></li>
+                       <li><a href="fiction-fantasy.html">Fantasy</a></li>
+                       <li><a href="fiction-historical.html">Historical</a></li>
+                       <li><a href="fiction-mystery.html">Mystery/Thriller</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown-submenu"><a id="non-fiction">Non-Fiction</a>
+                    <ul class="non-fiction-submenu">
+                      <li><a href="non-fiction-memoir.html">Memoir</a></li>
+                      <li><a href="non-fiction-psycology.html">Psycology</a></li>
+                    </ul>
+                </li>
+
+              </ul>
+            </li>
+          </ul>
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+      
+
+
+      <!--   <div class="topmenu">Genres <i class="fa fa-sort-desc" aria-hidden="true"></i></div>
+        <ul class="nav">
+            <li><a href="fiction.html" id="fiction">Fiction</a></li>
+                <ul class="fiction-submenu">
+                   <li><a href="fiction-contemporary.html">Contemporary</a></li>
+                   <li><a href="fiction-fantasy.html">Fantasy</a></li>
+                   <li><a href="fiction-historical.html">Historical</a></li>
+                   <li><a href="fiction-mystery.html">Mystery/Thriller</a></li>
+                </ul>
+            </li>
+        </ul> -->
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="js/myscript.js"></script>
+
+    <script>
+    $(document).ready(function(){
+      $('.dropdown-submenu').on("click", function(e){
+        $('ul', this).toggle();
+        e.stopPropagation();
+        e.preventDefault();
+      });
+    });
+    </script>
+</body>
+</html>
+
