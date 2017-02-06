@@ -121,6 +121,13 @@ img {
 
 }
 
+.subgenres {
+	display: none;
+	width: 100vw;
+	background-color: rgba(188, 183, 169, 0.9);
+
+}
+
 #up {
 	display: none;
 }

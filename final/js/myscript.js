@@ -8,7 +8,17 @@ $(document).ready(function() {
 	    $(this).toggleClass("down up");
 	});
 
-});
+
+	$(".genres").click(function(){
+	        $(".subgenres").slideToggle(300);
+	    });
+
+	    $('.genres').click(function() {
+		    $('down').toggle();
+		    $(this).toggleClass("down up");
+		});
+
+	});
 
 
 var options = {
