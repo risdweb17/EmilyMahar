@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>Bookshelf</title>
-        <meta name="Bookshelf" content="Catalog your personal library">
+        <meta name="Bookshelf" content="Curated book recs from all genres!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://use.fontawesome.com/98e787cea0.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Fauna+One" rel="stylesheet">
         <link rel="stylesheet" href="home-css/style.css">
+        
 
     </head>
     <body>
@@ -18,13 +19,34 @@
             <a href="homepage.html"><h1><i class="fa fa-book" aria-hidden="true"></i> Bookshelf</h1></a>
         </section>
 
-        <div class="nav-container">
-        <section class="header">
-            <a href="homepage.html"><h1><i class="fa fa-book" aria-hidden="true"></i> Bookshelf</h1></a>
-        </section>
-
         <section class="navigation">
-            
+
+            <button class="library menu" id="library"><h3>Library <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+
+            <button class="genres menu" id="genres"><h3>Genres <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+
+            <a href="lists.html"><button class="menu" id="lists"><h3>Lists</h3></button></a>
+           
+
+
+
+            <div class="sublibrary">
+            <ul>
+                <li><a href="read.html">Read</a></li>
+                <li><a href="to-read.html">To-Read</a></li>
+            </ul>
+            </div>
+
+            <div class="subgenres">
+            <ul>
+                <li><a href="childrens.html">Children's</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="non-fiction.html">Non-Fiction</a></li>
+                <li><a href="ya.html">Young Adult</a></li>
+            </ul>
+            </div>
+
+            <i id="up" class="fa fa-caret-up" aria-hidden="true"></i>   
 
 
         </section>
@@ -32,15 +54,24 @@
         
         <div class="sitebody">
 
+            <h2>Young Adult, Fantasy</h2>
+            <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="ya.html">All Young Adult</a></p>
+
 
             <div id="books">
             <div class="filter-bar">
               <input class="search" placeholder="Search" />
             <!-- class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by. -->
-              <button class="sort asc" data-sort="title">
+              <button class="sort" data-sort="title">
                 Sort by title
               </button>
               <button class="sort" data-sort="author">
                 Sort by author
               </button>
               </div>
+
+              
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+</html>

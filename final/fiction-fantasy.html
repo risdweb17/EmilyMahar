@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>Bookshelf</title>
-        <meta name="Bookshelf" content="Catalog your personal library">
+        <meta name="Bookshelf" content="Curated book recs from all genres!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://use.fontawesome.com/98e787cea0.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Fauna+One" rel="stylesheet">
         <link rel="stylesheet" href="home-css/style.css">
+        
 
     </head>
     <body>
@@ -18,13 +19,34 @@
             <a href="homepage.html"><h1><i class="fa fa-book" aria-hidden="true"></i> Bookshelf</h1></a>
         </section>
 
-        <div class="nav-container">
-        <section class="header">
-            <a href="homepage.html"><h1><i class="fa fa-book" aria-hidden="true"></i> Bookshelf</h1></a>
-        </section>
-
         <section class="navigation">
-            
+
+            <button class="library menu" id="library"><h3>Library <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+
+            <button class="genres menu" id="genres"><h3>Genres <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+
+            <a href="lists.html"><button class="menu" id="lists"><h3>Lists</h3></button></a>
+           
+
+
+
+            <div class="sublibrary">
+            <ul>
+                <li><a href="read.html">Read</a></li>
+                <li><a href="to-read.html">To-Read</a></li>
+            </ul>
+            </div>
+
+            <div class="subgenres">
+            <ul>
+                <li><a href="childrens.html">Children's</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="non-fiction.html">Non-Fiction</a></li>
+                <li><a href="ya.html">Young Adult</a></li>
+            </ul>
+            </div>
+
+            <i id="up" class="fa fa-caret-up" aria-hidden="true"></i>   
 
 
         </section>
@@ -32,15 +54,246 @@
         
         <div class="sitebody">
 
+        <h2>Fiction, Fantasy</h2>
+        <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="fiction.html">All Fiction</a></p>
 
             <div id="books">
             <div class="filter-bar">
               <input class="search" placeholder="Search" />
             <!-- class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by. -->
-              <button class="sort asc" data-sort="title">
+              <button class="sort" data-sort="title">
                 Sort by title
               </button>
               <button class="sort" data-sort="author">
                 Sort by author
               </button>
               </div>
+
+              <div class="list">
+              <div class="book">
+                    <p class="title">The Midnight Queen</p>
+                    <p class="author">Izzo Hunter, Sylvia</p>
+                    <a href="#midnightmodal"><img id="midnight" class="mainimg" src="img/Midnight.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">A Game of Thrones</p>
+                    <p class="author">Martin, George R.R.</p>
+                    <a href="#thronesmodal"><img id="thrones" class="mainimg" src="img/Thrones.jpg"></a>
+                </div>
+                div class="book">
+                    <p class="title">The Night Circus</p>
+                    <p class="author">Morgenstern, Erin</p>
+                    <a href="#circusmodal"><img id="circus" class="mainimg" src="img/Circus.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">Uprooted</p>
+                    <p class="author">Novik, Naomi</p>
+                    <a href="#uprootedmodal"><img class="mainimg" src="img/Uprooted.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">A Darker Shade of Magic</p>
+                    <p class="author">Schwab,V.E.</p>
+                    <a href="#magicmodal"><img class="mainimg" src="img/Magic.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">The Ocean at the End of the Lane</p>
+                    <p class="author">Gaiman, Neil</p>
+                    <a href="#oceanmodal"><img class="mainimg" src="img/Ocean.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">The Magicians</p>
+                    <p class="author">Grossman, Lev</p>
+                    <a href="#magiciansmodal"><img class="mainimg" src="img/Magicians.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">The Queen of the Tearling</p>
+                    <p class="author">Johansen, Erika</p>
+                    <a href="#tearlingmodal"><img class="mainimg" src="img/Tearling.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="midnightmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="midnight" class="modalimg" src="img/Midnight.jpg">
+                    <h2>The Midnight Queen by Sylvia Izzo Hunter</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> A well crafted and magical story that will keep you hooked until the very end. A hidden gem in the fantasy genre. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>In the hallowed halls of Oxford’s Merlin College, the most talented—and highest born—sons of the Kingdom of Britain are taught the intricacies of magickal theory. But what dazzles can also destroy, as Gray Marshall is about to discover…</p>
+ 
+                    <p>Gray’s deep talent for magick has won him a place at Merlin College. But when he accompanies four fellow students on a mysterious midnight errand that ends in disaster and death, he is sent away in disgrace—and without a trace of his power. He must spend the summer under the watchful eye of his domineering professor, Appius Callender, working in the gardens of Callender’s country estate and hoping to recover his abilities. And it is there, toiling away on a summer afternoon, that he meets the professor’s daughter.</p>
+                     
+                    <p>Even though she has no talent of her own, Sophie Callender longs to be educated in the lore of magick. Her father has kept her isolated at the estate and forbidden her interest; everyone knows that teaching arcane magickal theory to women is the height of impropriety. But against her father’s wishes, Sophie has studied his ancient volumes on the subject. And in the tall, stammering, yet oddly charming Gray, she finally finds someone who encourages her interest and awakens new ideas and feelings.</p>
+                     
+                    <p>Sophie and Gray’s meeting touches off a series of events that begins to unravel secrets about each of them. And after the king’s closest advisor pays the professor a closed-door visit, they begin to wonder if what Gray witnessed in Oxford might be even more sinister than it seemed. They are determined to find out, no matter the cost…</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="fiction.html">Fiction</a>, <a href="fiction-fantasy.html">Fantasy</a>, <a href="fiction-historical.html">Historical</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/the-midnight-queen-sylvia-izzo-hunter/1118663029?ean=9780425272459" target="_blank"><h4>PURCHASE</h4></a>
+
+            </div>
+        </div>
+
+        <div id="thronesmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="thrones" class="modalimg" src="img/Thrones.jpg">
+                    <h2>A Game of Thrones by George R.R. Martin</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> A rich and dense world of mystery and intrigue that creates an addicting world filled to the brim with intense characters, and intertwining plots. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>In A Game of Thrones, George R.R. Martin has created a genuine masterpiece, bringing together the best the genre has to offer. Mystery, intrigue, romance, and adventure fill the pages of the first volume in an epic series sure to delight fantansy fans everywhere.</p>
+
+                    <p>In a land where summers can last decades and winters a lifetime, trouble is brewing. The cold is returning, and in the frozen wastes of the north of Winterfell, sinister and supernatural forces are massing beyond the kingdom's protective Wall. At the center of the conflict lie the Starks of Winterfell, a family as harsh and unyielding as the land they were born to. Sweeping from a land of brutal cold to a distant summertime kingdom of epicurean plenty, here is a tale of lords and ladies, soldiers and sorcerers, assassins and bastards, who come together in a time of grim omens. Amid plots and counterplots, tragedy and betrayal, victory and terror, the fate of the Starks, their allies, and their enemies hangs perilously in the balance, as each endeavors to win that deadliest of conflicts: the game of thrones.</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="fiction.html">Fiction</a>, <a href="fiction-fantasy.html">Fantasy</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/game-of-thrones-george-r-r-martin/1100041703?ean=9780553573404" target="_blank"><h4>PURCHASE</h4></a>
+
+            </div>
+        </div>
+
+        <div id="circusmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="circus" class="modalimg" src="img/Circus.jpg">
+                    <h2>The Night Circus by Erin Morgenstern</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> This book is beautiful and enchanting. It is magical realism at its finest!  <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>The circus arrives without warning. No announcements precede it, no paper notices plastered on lampposts and billboards. It is simply there, when yesterday it was not.<p> 
+
+                    <p>Within these nocturnal black-and-white striped tents awaits an utterly unique, a feast for the senses, where one can get lost in a maze of clouds, meander through a lush garden made of ice, stare in wonderment as the tattooed contortionist folds herself into a small glass box, and become deliciously tipsy from the scents of caramel and cinnamon that waft through the air.</p> 
+
+                    <p>Welcome to Le Cirque des Rêves.</p> 
+
+                    <p>Beyond the smoke and mirrors, however, a fierce competition is under way--a contest between two young illusionists, Celia and Marco, who have been trained since childhood to compete in a "game" to which they have been irrevocably bound by their mercurial masters. Unbeknownst to the players, this is a game in which only one can be left standing, and the circus is but the stage for a remarkable battle of imagination and will.</p> 
+
+                    <p>As the circus travels around the world, the feats of magic gain fantastical new heights with every stop. The game is well under way and the lives of all those involved--the eccentric circus owner, the elusive contortionist, the mystical fortune-teller, and a pair of red-headed twins born backstage among them--are swept up in a wake of spells and charms.</p> 
+
+                    <p>But when Celia discovers that Marco is her adversary, they begin to think of the game not as a competition but as a wonderful collaboration. With no knowledge of how the game must end, they innocently tumble headfirst into love. A deep, passionate, and magical love that makes the lights flicker and the room grow warm whenever they so much as brush hands.</p> 
+
+                    <p>Their masters still pull the strings, however, and this unforeseen occurrence forces them to intervene with dangerous consequences, leaving the lives of everyone from the performers to the patrons hanging in the balance.</p> 
+
+                    <p>Both playful and seductive, The Night Circus, Erin Morgenstern's spell-casting debut, is a mesmerizing love story for the ages.</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="fiction.html">Fiction</a>, <a href="fiction-fantasy.html">Fantasy</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/night-circus-erin-morgenstern/1100083576?ean=9780307744432" target="_blank"><h4>PURCHASE</h4></a>
+
+            </div>
+        </div>
+
+        <div id="uprootedmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="uprooted" class="modalimg" src="img/Uprooted.jpg">
+                    <h2>Uprooted by Naomi Novik</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> Extremely hyped before its release, Uprooted is said to be a interesting mix of fairy tale and fantasy.  <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>Agnieszka loves her valley home, her quiet village, the forests and the bright shining river. But the corrupted Wood stands on the border, full of malevolent power, and its shadow lies over her life.</p>
+
+                    <p>Her people rely on the cold, driven wizard known only as the Dragon to keep its powers at bay. But he demands a terrible price for his help: one young woman handed over to serve him for ten years, a fate almost as terrible as falling to the Wood.</p>
+
+                    <p>The next choosing is fast approaching, and Agnieszka is afraid. She knows—everyone knows—that the Dragon will take Kasia: beautiful, graceful, brave Kasia, all the things Agnieszka isn’t, and her dearest friend in the world. And there is no way to save her.</p>
+
+                    <p>But Agnieszka fears the wrong things. For when the Dragon comes, it is not Kasia he will choose.</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="fiction.html">Fiction</a>, <a href="fiction-fantasy.html">Fantasy</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/uprooted-naomi-novik/1119702245?ean=9780804179058" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+        <div id="magicmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="magic" class="modalimg" src="img/Magic.jpg">
+                    <h2>A Darker Shade of Magic by V.E. Schwab</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> Under the pseudonym V.E. Schwab, the already well-known young adult author Victoria Schwab enters the world of adult urban fantasy, with great praise and excitement.  <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>Kell is one of the last travelers--magicians with a rare, coveted ability to travel between parallel universes connected by one magical city.</p> 
+
+                    <p>There's Grey London, dirty and boring, without any magic, and with one mad King--George III. Red London, where life and magic are revered--and where Kell was raised alongside Rhy Maresh, the roguish heir to a flourishing empire. White London--a place where people fight to control magic and the magic fights back, draining the city to its very bones. And once upon a time, there was Black London. But no one speaks of that now.</p>
+
+                    <p>Officially, Kell is the Red traveler, ambassador of the Maresh empire, carrying the monthly correspondences between the royals of each London. Unofficially, Kell is a smuggler, servicing people willing to pay for even the smallest glimpses of a world they'll never see. It's a defiant hobby with dangerous consequences, which Kell is now seeing firsthand.</p>
+
+                    <p>Fleeing into Grey London, Kell runs into Delilah Bard, a cut-purse with lofty aspirations. She robs him, saves him from a deadly enemy, and finally forces Kell to spirit her to another world for a proper adventure.</p> 
+
+                    <p>Now perilous magic is afoot, and treachery lurks at every turn. To save all of the worlds, they'll first need to stay alive.</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="fiction.html">Fiction</a>, <a href="fiction-fantasy.html">Fantasy</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/a-darker-shade-of-magic-v-e-schwab/1119439463?ean=9780765376466" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+        <div id="oceanmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="ocean" class="modalimg" src="img/Ocean.jpg">
+                    <h2>The Ocean at the End of the Lane by Neil Gaiman</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> Neil Gaiman's work is a masterful mix of all things unique and beautiful, and The Ocean at the End of the Lane is said to be no exception. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>Sussex, England. A middle-aged man returns to his childhood home to attend a funeral. Although the house he lived in is long gone, he is drawn to the farm at the end of the road, where, when he was seven, he encountered a most remarkable girl, Lettie Hempstock, and her mother and grandmother. He hasn't thought of Lettie in decades, and yet as he sits by the pond (a pond that she'd claimed was an ocean) behind the ramshackle old farmhouse, the unremembered past comes flooding back. And it is a past too strange, too frightening, too dangerous to have happened to anyone, let alone a small boy.</p>
+
+                    <p>Forty years earlier, a man committed suicide in a stolen car at this farm at the end of the road. Like a fuse on a firework, his death lit a touchpaper and resonated in unimaginable ways. The darkness was unleashed, something scary and thoroughly incomprehensible to a little boy. And Lettie—magical, comforting, wise beyond her years—promised to protect him, no matter what.</p>
+
+                    <p>A groundbreaking work from a master, The Ocean at the End of the Lane is told with a rare understanding of all that makes us human, and shows the power of stories to reveal and shelter us from the darkness inside and out. It is a stirring, terrifying, and elegiac fable as delicate as a butterfly's wing and as menacing as a knife in the dark.</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="fiction.html">Fiction</a>, <a href="fiction-fantasy.html">Fantasy</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/the-ocean-at-the-end-of-the-lane-neil-gaiman/1113200718?ean=9780062255662" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+        <div id="magiciansmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="magicians" class="modalimg" src="img/Magicians.jpg">
+                    <h2>The Magicians by Lev Grossman</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> Called "Harry Potter" and "Narnia" for adults, The Magicians is pure magic for a new age.<i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>Like everyone else, precocious high school senior Quentin Coldwater assumes that magic isn't real, until he finds himself admitted to a very secretive and exclusive college of magic in upstate New York. There he indulges in joys of college-friendship, love, sex, and booze- and receives a rigorous education in modern sorcery. But magic doesn't bring the happiness and adventure Quentin thought it would. After graduation, he and his friends stumble upon a secret that sets them on a remarkable journey that may just fulfill Quentin's yearning. But their journey turns out to be darker and more dangerous than they'd imagined.</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="fiction.html">Fiction</a>, <a href="fiction-fantasy.html">Fantasy</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/magicians-lev-grossman/1100309808?ean=9780452296299" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+        <div id="tearlingmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="Tearling" class="modalimg" src="img/Tearling.jpg">
+                    <h2>The Queen of the Tearling by Erika Johansen</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> Already being turned into a film starring Emma Watson before its publication, The Queen of the Tearling met with incredible praise upon release. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>Magic, adventure, mystery, and romance combine in this epic debut in which a young princess must reclaim her dead mother’s throne, learn to be a ruler—and defeat the Red Queen, a powerful and malevolent sorceress determined to destroy her.</p>
+
+                    <p>On her nineteenth birthday, Princess Kelsea Raleigh Glynn, raised in exile, sets out on a perilous journey back to the castle of her birth to ascend her rightful throne. Plain and serious, a girl who loves books and learning, Kelsea bears little resemblance to her mother, the vain and frivolous Queen Elyssa. But though she may be inexperienced and sheltered, Kelsea is not defenseless: Around her neck hangs the Tearling sapphire, a jewel of immense magical power; and accompanying her is the Queen’s Guard, a cadre of brave knights led by the enigmatic and dedicated Lazarus. Kelsea will need them all to survive a cabal of enemies who will use every weapon—from crimson-caped assassins to the darkest blood magic—to prevent her from wearing the crown.</p>
+
+                    <p>Despite her royal blood, Kelsea feels like nothing so much as an insecure girl, a child called upon to lead a people and a kingdom about which she knows almost nothing. But what she discovers in the capital will change everything, confronting her with horrors she never imagined. An act of singular daring will throw Kelsea’s kingdom into tumult, unleashing the vengeance of the tyrannical ruler of neighboring Mortmesne: the Red Queen, a sorceress possessed of the darkest magic. Now Kelsea will begin to discover whom among the servants, aristocracy, and her own guard she can trust.</p>
+
+                    <p>But the quest to save her kingdom and meet her destiny has only just begun—a wondrous journey of self-discovery and a trial by fire that will make her a legend . . . if she can survive.</p>
+
+                    <p>This book will be a beautifully designed package with illustrated endpapers, a map of the Tearling, and a ribbon marker.</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="fiction.html">Fiction</a>, <a href="fiction-fantasy.html">Fantasy</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/the-queen-of-the-tearling-erika-johansen/1117136196?ean=9780062290380" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+</html>

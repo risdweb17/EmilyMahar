@@ -16,6 +16,19 @@ p a:hover {
 	color: #7a776e;
 }
 
+ul, li {
+	list-style-type: none;
+	margin-bottom: 1em;
+	background-color: transparent;
+	padding: 0.5em 1em 0.5em 1em;
+}
+
+li:hover {
+	background-color: #efeade;
+	color: #3d5156;
+	transition: 0.5s;
+}
+
 blockquote {
 	font-family: 'Fauna One', serif;
 	font-size: 10pt;
@@ -58,6 +71,7 @@ h4 {
 h4:hover {
 	background-color: #3d5156;
 	color: #efeade;
+	cursor: pointer;
 }
 
 h5 {
@@ -94,6 +108,17 @@ img {
 	z-index: -1;
 }
 
+.gemsbody {
+	display: none;
+}
+
+.worldsbody {
+	display: none;
+}
+
+.inspirationbody {
+	display: none;
+}
 .filter-bar {
 	height: 1em;
 	width: 100vw;
@@ -115,16 +140,20 @@ img {
 }
 
 .sublibrary {
+	margin-left: 0.75em;
 	display: none;
-	width: 100vw;
+	width: auto;
 	background-color: rgba(188, 183, 169, 0.9);
+	position: absolute;
 
 }
 
 .subgenres {
+	margin-left: 10em;
 	display: none;
-	width: 100vw;
+	width: auto;
 	background-color: rgba(188, 183, 169, 0.9);
+	position: absolute;
 
 }
 

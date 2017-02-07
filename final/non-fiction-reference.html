@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bookshelf</title>
+        <meta name="Bookshelf" content="Curated book recs from all genres!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://use.fontawesome.com/98e787cea0.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Fauna+One" rel="stylesheet">
+        <link rel="stylesheet" href="home-css/style.css">
+        
+
+    </head>
+    <body>
+
+    <div class="nav-container">
+        <section class="header">
+            <a href="homepage.html"><h1><i class="fa fa-book" aria-hidden="true"></i> Bookshelf</h1></a>
+        </section>
+
+        <section class="navigation">
+
+            <button class="library menu" id="library"><h3>Library <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+
+            <button class="genres menu" id="genres"><h3>Genres <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+
+            <a href="lists.html"><button class="menu" id="lists"><h3>Lists</h3></button></a>
+           
+
+
+
+            <div class="sublibrary">
+            <ul>
+                <li><a href="read.html">Read</a></li>
+                <li><a href="to-read.html">To-Read</a></li>
+            </ul>
+            </div>
+
+            <div class="subgenres">
+            <ul>
+                <li><a href="childrens.html">Children's</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="non-fiction.html">Non-Fiction</a></li>
+                <li><a href="ya.html">Young Adult</a></li>
+            </ul>
+            </div>
+
+            <i id="up" class="fa fa-caret-up" aria-hidden="true"></i>   
+
+
+        </section>
+        </div>
+        
+        <div class="sitebody">
+
+        <h2>Non-Fiction, Reference</h2>
+            <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="non-fiction.html">All Non-Fiction</a></p>
+
+            <div id="books">
+            <div class="filter-bar">
+              <input class="search" placeholder="Search" />
+            <!-- class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by. -->
+              <button class="sort" data-sort="title">
+                Sort by title
+              </button>
+              <button class="sort" data-sort="author">
+                Sort by author
+              </button>
+              </div>
+
+              <div class="list">
+              <div class="book">
+                    <p class="title">How to Read Literature Like a Professor</p>
+                    <p class="author">Foster, Thomas C.</p>
+                    <a href="#literaturemodal"><img class="mainimg" src="img/Literature.jpg"></a>
+                </div>
+             </div>
+        </div>
+    </div>
+
+    <div id="literaturemodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="literature" class="modalimg" src="img/Literature.jpg">
+                    <h2>How to Read Literature Like a Professor by Thomas C. Foster</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> And entertaining and informative guide to reading in a more academic way. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>A thoroughly revised and updated edition of Thomas C. Foster's classic guide-a lively and entertaining introduction to literature and literary basics, including symbols, themes and contexts, that shows you how to make your everyday reading experience more rewarding and enjoyable. While many books can be enjoyed for their basic stories, there are often deeper literary meanings interwoven in these texts. How to Read Literature Like a Professor helps us to discover those hidden truths by looking at literature with the eyes-and the literary codes-of the ultimate professional reader, the college professor. What does it mean when a literary hero is traveling along a dusty road? When he hands a drink to his companion? When he's drenched in a sudden rain shower? Ranging from major themes to literary models, narrative devices and form, Thomas C. Foster provides us with a broad overview of literature-a world where a road leads to a quest, a shared meal may signify a communion, and rain, whether cleansing or destructive, is never just a shower-and shows us how to make our reading experience more enriching, satisfying, and fun. This revised edition includes new chapters, a new preface and epilogue, and incorporates updated teaching points that Foster has developed over the past decade.</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="non-fiction.html">Non-Fiction</a>, <a href="non-fiction-reference.html">Reference</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/how-to-read-literature-like-a-professor-revised-thomas-c-foster/1116864966?ean=9780062301673" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+</html>

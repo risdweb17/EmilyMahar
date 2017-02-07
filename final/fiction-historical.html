@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>Bookshelf</title>
-        <meta name="Bookshelf" content="Catalog your personal library">
+        <meta name="Bookshelf" content="Curated book recs from all genres!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://use.fontawesome.com/98e787cea0.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Fauna+One" rel="stylesheet">
         <link rel="stylesheet" href="home-css/style.css">
+        
 
     </head>
     <body>
@@ -18,13 +19,34 @@
             <a href="homepage.html"><h1><i class="fa fa-book" aria-hidden="true"></i> Bookshelf</h1></a>
         </section>
 
-        <div class="nav-container">
-        <section class="header">
-            <a href="homepage.html"><h1><i class="fa fa-book" aria-hidden="true"></i> Bookshelf</h1></a>
-        </section>
-
         <section class="navigation">
-            
+
+            <button class="library menu" id="library"><h3>Library <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+
+            <button class="genres menu" id="genres"><h3>Genres <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+
+            <a href="lists.html"><button class="menu" id="lists"><h3>Lists</h3></button></a>
+           
+
+
+
+            <div class="sublibrary">
+            <ul>
+                <li><a href="read.html">Read</a></li>
+                <li><a href="to-read.html">To-Read</a></li>
+            </ul>
+            </div>
+
+            <div class="subgenres">
+            <ul>
+                <li><a href="childrens.html">Children's</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="non-fiction.html">Non-Fiction</a></li>
+                <li><a href="ya.html">Young Adult</a></li>
+            </ul>
+            </div>
+
+            <i id="up" class="fa fa-caret-up" aria-hidden="true"></i>   
 
 
         </section>
@@ -32,15 +54,79 @@
         
         <div class="sitebody">
 
+            <h2>Fiction, Historical</h2>
+            <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="fiction.html">All Fiction</a></p>
 
             <div id="books">
             <div class="filter-bar">
               <input class="search" placeholder="Search" />
             <!-- class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by. -->
-              <button class="sort asc" data-sort="title">
+              <button class="sort" data-sort="title">
                 Sort by title
               </button>
               <button class="sort" data-sort="author">
                 Sort by author
               </button>
               </div>
+
+              <div class="list">
+              <div class="book">
+                    <p class="title">The Midnight Queen</p>
+                    <p class="author">Izzo Hunter, Sylvia</p>
+                    <a href="#midnightmodal"><img id="midnight" class="mainimg" src="img/Midnight.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">Savage Girl</p>
+                    <p class="author">Zimmerman, Jean</p>
+                    <a href="#savagemodal"><img class="mainimg" src="img/Savage.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="midnightmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="midnight" class="modalimg" src="img/Midnight.jpg">
+                    <h2>The Midnight Queen by Sylvia Izzo Hunter</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> A well crafted and magical story that will keep you hooked until the very end. A hidden gem in the fantasy genre. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>In the hallowed halls of Oxford’s Merlin College, the most talented—and highest born—sons of the Kingdom of Britain are taught the intricacies of magickal theory. But what dazzles can also destroy, as Gray Marshall is about to discover…</p>
+ 
+                    <p>Gray’s deep talent for magick has won him a place at Merlin College. But when he accompanies four fellow students on a mysterious midnight errand that ends in disaster and death, he is sent away in disgrace—and without a trace of his power. He must spend the summer under the watchful eye of his domineering professor, Appius Callender, working in the gardens of Callender’s country estate and hoping to recover his abilities. And it is there, toiling away on a summer afternoon, that he meets the professor’s daughter.</p>
+                     
+                    <p>Even though she has no talent of her own, Sophie Callender longs to be educated in the lore of magick. Her father has kept her isolated at the estate and forbidden her interest; everyone knows that teaching arcane magickal theory to women is the height of impropriety. But against her father’s wishes, Sophie has studied his ancient volumes on the subject. And in the tall, stammering, yet oddly charming Gray, she finally finds someone who encourages her interest and awakens new ideas and feelings.</p>
+                     
+                    <p>Sophie and Gray’s meeting touches off a series of events that begins to unravel secrets about each of them. And after the king’s closest advisor pays the professor a closed-door visit, they begin to wonder if what Gray witnessed in Oxford might be even more sinister than it seemed. They are determined to find out, no matter the cost…</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="fiction.html">Fiction</a>, <a href="fiction-fantasy.html">Fantasy</a>, <a href="fiction-historical.html">Historical</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/the-midnight-queen-sylvia-izzo-hunter/1118663029?ean=9780425272459" target="_blank"><h4>PURCHASE</h4></a>
+
+            </div>
+        </div>
+
+        <div id="savagemodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="savage" class="modalimg" src="img/Savage.jpg">
+                    <h2>Savage Girl by Jean Zimmerman</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> Savage Girl is a mysterious and dark historical fiction woven with family scandal, murder, and a haunting romance. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>Jean Zimmerman’s spectacular follow-up to The Orphanmaster has it all: Gilded Age romance, robber baron excess, detective story suspense, and a compelling female protagonist whom readers will fall in love with.</p>
+
+                    <p>In 1875, the Delegates, an outlandishly wealthy Manhattan couple on a tour of the American West, seek out a sideshow attraction called “Savage Girl.” Her handlers avow that the wild, seemingly mute Bronwyn has been raised by wolves. Presented with the perfect blank slate to explore the power of civilized nurture, the Delegates take her back east to be introduced into high society. Cleaned up, Bronwyn is blazingly smart and darkly beautiful; as she takes steps toward her grand debut, a series of suitors find her irresistible—and begin to turn up murdered.</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="fiction.html">Fiction</a>, <a href="fiction-historical.html">Historical</a>, <a href="fiction-mystery.html">Mystery/Thriller</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/savage-girl-jean-zimmerman/1115811876?ean=9780143126928#productInfoTabs" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+</html>

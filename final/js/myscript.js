@@ -1,29 +1,32 @@
 $(document).ready(function() {
 	$(".library").click(function(){
-        $(".sublibrary").slideToggle(300);
+        $(".sublibrary").slideToggle(600);
+        $(".subgenres").hide(600);
     });
-
-    $('.library').click(function() {
-	    $('down').toggle();
-	    $(this).toggleClass("down up");
-	});
 
 
 	$(".genres").click(function(){
-	        $(".subgenres").slideToggle(300);
+	        $(".subgenres").slideToggle(600);
+	        $(".sublibrary").hide(600);
 	    });
 
-	    $('.genres').click(function() {
-		    $('down').toggle();
-		    $(this).toggleClass("down up");
-		});
 
-	});
+	$('.gemlist').click(function(){
+        $(".gemsbody").slideToggle(600);
+    });
+
+    $('.worldslist').click(function(){
+        $(".worldsbody").slideToggle(600);
+    });
+
+    $('.inspirationlist').click(function(){
+        $(".inspirationbody").slideToggle(600);
+    });
+
+});
 
 
 var options = {
   valueNames: [ 'title', 'author' ]
 };
-
 var userList = new List('books', options);
-

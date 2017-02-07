@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>Bookshelf</title>
-        <meta name="Bookshelf" content="Catalog your personal library">
+        <meta name="Bookshelf" content="Curated book recs from all genres!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://use.fontawesome.com/98e787cea0.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Fauna+One" rel="stylesheet">
         <link rel="stylesheet" href="home-css/style.css">
+        
 
     </head>
     <body>
@@ -18,13 +19,34 @@
             <a href="homepage.html"><h1><i class="fa fa-book" aria-hidden="true"></i> Bookshelf</h1></a>
         </section>
 
-        <div class="nav-container">
-        <section class="header">
-            <a href="homepage.html"><h1><i class="fa fa-book" aria-hidden="true"></i> Bookshelf</h1></a>
-        </section>
-
         <section class="navigation">
-            
+
+            <button class="library menu" id="library"><h3>Library <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+
+            <button class="genres menu" id="genres"><h3>Genres <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+
+            <a href="lists.html"><button class="menu" id="lists"><h3>Lists</h3></button></a>
+           
+
+
+
+            <div class="sublibrary">
+            <ul>
+                <li><a href="read.html">Read</a></li>
+                <li><a href="to-read.html">To-Read</a></li>
+            </ul>
+            </div>
+
+            <div class="subgenres">
+            <ul>
+                <li><a href="childrens.html">Children's</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="non-fiction.html">Non-Fiction</a></li>
+                <li><a href="ya.html">Young Adult</a></li>
+            </ul>
+            </div>
+
+            <i id="up" class="fa fa-caret-up" aria-hidden="true"></i>   
 
 
         </section>
@@ -32,6 +54,9 @@
         
         <div class="sitebody">
 
+
+        <h2>Fiction, Mystery/Thriller</h2>
+        <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="fiction.html">All Fiction</a></p>
 
             <div id="books">
             <div class="filter-bar">
@@ -44,3 +69,90 @@
                 Sort by author
               </button>
               </div>
+
+              <div class="list">
+              <div class="book">
+                    <p class="title">The Girl on the Train</p>
+                    <p class="author">Hawkins, Paula</p>
+                    <a href="#trainmodal"><img class="mainimg" src="img/Train.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">Savage Girl</p>
+                    <p class="author">Zimmerman, Jean</p>
+                    <a href="#savagemodal"><img class="mainimg" src="img/Savage.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">House of Leaves</p>
+                    <p class="author">Danielewski, Mark Z. </p>
+                    <a href="#leavesmodal"><img class="mainimg" src="img/Leaves.jpg"></a>
+                </div>
+                </div>
+        </div>
+    </div>
+
+    <div id="trainmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="magic" class="modalimg" src="img/Train.jpg">
+                    <h2>The Girl on the Train by Paula Hawkins</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> After the excitement and rising popularity of mystery/thrillers thanks to Gone Girl, The Girl on the Train has become the next "big thing" for the genre. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>The debut psychological thriller that will forever change the way you look at other people's lives.</p>
+
+                    <p>EVERY DAY THE SAME</p>
+                    <p>Rachel takes the same commuter train every morning and night. Every day she rattles down the track, flashes past a stretch of cozy suburban homes, and stops at the signal that allows her to daily watch the same couple breakfasting on their deck. She’s even started to feel like she knows them. Jess and Jason, she calls them. Their life—as she sees it—is perfect. Not unlike the life she recently lost.</p>
+
+                    <p>UNTIL TODAY</p>
+                    <p>And then she sees something shocking. It’s only a minute until the    train moves on, but it’s enough. Now everything’s changed. Unable to keep it to herself, Rachel goes to the police. But is she really as unreliable as they say? Soon she is deeply entangled not only in the investigation but in the lives of everyone involved. Has she done more harm than good?</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="fiction.html">Fiction</a>, <a href="fiction-mystery.html">Mystery/Thriller</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/the-girl-on-the-train-paula-hawkins/1119671425?ean=9781594634024" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+        <div id="leavesmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="leaves" class="modalimg" src="img/Leaves.jpg">
+                    <h2>House of Leaves by Mark Z. Danielewski</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> Personally recommended to me by many, this book truly turns the traditional reading experience upside down, eschewing paragraphs for images, vertical text, code, and much more. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>Years ago, when House of Leaves was first being passed around, it was nothing more than a badly bundled heap of paper, parts of which would occasionally surface on the Internet. No one could have anticipated the small but devoted following this terrifying story would soon command. Starting with an odd assortment of marginalized youth—musicians, tattoo artists, programmers, strippers, environmentalists, and adrenaline junkies—the book eventually made its way into the hands of older generations, who not only found themselves in those strangely arranged pages but also discovered a way back into the lives of their estranged children.</p>
+
+                    <p>Now, for the first time, this astonishing novel is made available in book form, complete with the original colored words, vertical footnotes, and newly added second and third appendices.</p>
+
+                    <p>The story remains unchanged, focusing on a young family that moves into a small home on Ash Tree Lane where they discover something is terribly wrong: their house is bigger on the inside than it is on the outside.</p>
+
+                    <p>Of course, neither Pulitzer Prize-winning photojournalist Will Navidson nor his companion Karen Green was prepared to face the consequences of that impossibility, until the day their two little children wandered off and their voices eerily began to return another story—of creature darkness, of an ever-growing abyss behind a closet door, and of that unholy growl which soon enough would tear through their walls and consume all their dreams.</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="fiction.html">Fiction</a>, <a href="fiction-mystery.html">Mystery/Thriller</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/house-of-leaves-mark-z-danielewski/1103027816?ean=9780375703768" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+        <div id="savagemodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="savage" class="modalimg" src="img/Savage.jpg">
+                    <h2>Savage Girl by Jean Zimmerman</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> Savage Girl is a mysterious and dark historical fiction woven with family scandal, murder, and a haunting romance. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>Jean Zimmerman’s spectacular follow-up to The Orphanmaster has it all: Gilded Age romance, robber baron excess, detective story suspense, and a compelling female protagonist whom readers will fall in love with.</p>
+
+                    <p>In 1875, the Delegates, an outlandishly wealthy Manhattan couple on a tour of the American West, seek out a sideshow attraction called “Savage Girl.” Her handlers avow that the wild, seemingly mute Bronwyn has been raised by wolves. Presented with the perfect blank slate to explore the power of civilized nurture, the Delegates take her back east to be introduced into high society. Cleaned up, Bronwyn is blazingly smart and darkly beautiful; as she takes steps toward her grand debut, a series of suitors find her irresistible—and begin to turn up murdered.</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="fiction.html">Fiction</a>, <a href="fiction-historical.html">Historical</a>, <a href="fiction-mystery.html">Mystery/Thriller</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/savage-girl-jean-zimmerman/1115811876?ean=9780143126928#productInfoTabs" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+</html>

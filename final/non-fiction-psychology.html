@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>Bookshelf</title>
-        <meta name="Bookshelf" content="Catalog your personal library">
+        <meta name="Bookshelf" content="Curated book recs from all genres!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://use.fontawesome.com/98e787cea0.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Fauna+One" rel="stylesheet">
         <link rel="stylesheet" href="home-css/style.css">
+        
 
     </head>
     <body>
@@ -19,7 +20,33 @@
         </section>
 
         <section class="navigation">
-            
+
+            <button class="library menu" id="library"><h3>Library <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+
+            <button class="genres menu" id="genres"><h3>Genres <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+
+            <a href="lists.html"><button class="menu" id="lists"><h3>Lists</h3></button></a>
+           
+
+
+
+            <div class="sublibrary">
+            <ul>
+                <li><a href="read.html">Read</a></li>
+                <li><a href="to-read.html">To-Read</a></li>
+            </ul>
+            </div>
+
+            <div class="subgenres">
+            <ul>
+                <li><a href="childrens.html">Children's</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="non-fiction.html">Non-Fiction</a></li>
+                <li><a href="ya.html">Young Adult</a></li>
+            </ul>
+            </div>
+
+            <i id="up" class="fa fa-caret-up" aria-hidden="true"></i>   
 
 
         </section>
@@ -27,15 +54,54 @@
         
         <div class="sitebody">
 
+        <h2>Non-Fiction, Psychology</h2>
+            <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="non-fiction.html">All Non-Fiction</a></p>
 
             <div id="books">
             <div class="filter-bar">
               <input class="search" placeholder="Search" />
             <!-- class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by. -->
-              <button class="sort asc" data-sort="title">
+              <button class="sort" data-sort="title">
                 Sort by title
               </button>
               <button class="sort" data-sort="author">
                 Sort by author
               </button>
               </div>
+
+              <div class="list">
+              <div class="book">
+                    <p class="title">Quiet: The Power of Introverts in a World That Can't Stop Talking</p>
+                    <p class="author">Cain, Susan</p>
+                    <a href="#quietmodal"><img class="mainimg" src="img/Quiet.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="quietmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="quiet" class="modalimg" src="img/Quiet.jpg">
+                    <h2>Quiet: The Power of Introverts in a World That Can't Stop Talking by Susan Cain</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> First introduced to me in my high school English class, I found the premise of this book to be equally interesting and relatable. I'm eager to delve deeper into the psycology of a book that challenges the world's need for people to be extroverted.  <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>At least one-third of the people we know are introverts. They are the ones who prefer listening to speaking, reading to partying; who innovate and create but dislike self-promotion; who favor working on their own over brainstorming in teams. Although they are often labeled "quiet," it is to introverts that we owe many of the great contributions to society--from van Gogh’s sunflowers to the invention of the personal computer.</p>
+
+                    <p>Passionately argued, impressively researched, and filled with indelible stories of real people, Quiet shows how dramatically we undervalue introverts, and how much we lose in doing so. Taking the reader on a journey from Dale Carnegie’s birthplace to Harvard Business School, from a Tony Robbins seminar to an evangelical megachurch, Susan Cain charts the rise of the Extrovert Ideal in the twentieth century and explores its far-reaching effects. She talks to Asian-American students who feel alienated from the brash, backslapping atmosphere of American schools. She questions the dominant values of American business culture, where forced collaboration can stand in the way of innovation, and where the leadership potential of introverts is often overlooked. And she draws on cutting-edge research in psychology and neuroscience to reveal the surprising differences between extroverts and introverts.</p>
+
+                    <p>Perhaps most inspiring, she introduces us to successful introverts--from a witty, high-octane public speaker who recharges in solitude after his talks, to a record-breaking salesman who quietly taps into the power of questions. Finally, she offers invaluable advice on everything from how to better negotiate differences in introvert-extrovert relationships to how to empower an introverted child to when it makes sense to be a "pretend extrovert."</p>
+
+                    <p>This extraordinary book has the power to permanently change how we see introverts and, equally important, how introverts see themselves.</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="non-fiction.html">Non-Fiction</a>, <a href="non-fiction-psychology.html">Psychology</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/quiet-susan-cain/1101870221?ean=9780307352156" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+</html>

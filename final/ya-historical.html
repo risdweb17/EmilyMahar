@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>Bookshelf</title>
-        <meta name="Bookshelf" content="Catalog your personal library">
+        <meta name="Bookshelf" content="Curated book recs from all genres!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://use.fontawesome.com/98e787cea0.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Fauna+One" rel="stylesheet">
         <link rel="stylesheet" href="home-css/style.css">
+        
 
     </head>
     <body>
@@ -18,13 +19,34 @@
             <a href="homepage.html"><h1><i class="fa fa-book" aria-hidden="true"></i> Bookshelf</h1></a>
         </section>
 
-       <div class="nav-container">
-        <section class="header">
-            <a href="homepage.html"><h1><i class="fa fa-book" aria-hidden="true"></i> Bookshelf</h1></a>
-        </section>
-
         <section class="navigation">
-            
+
+            <button class="library menu" id="library"><h3>Library <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+
+            <button class="genres menu" id="genres"><h3>Genres <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+
+            <a href="lists.html"><button class="menu" id="lists"><h3>Lists</h3></button></a>
+           
+
+
+
+            <div class="sublibrary">
+            <ul>
+                <li><a href="read.html">Read</a></li>
+                <li><a href="to-read.html">To-Read</a></li>
+            </ul>
+            </div>
+
+            <div class="subgenres">
+            <ul>
+                <li><a href="childrens.html">Children's</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="non-fiction.html">Non-Fiction</a></li>
+                <li><a href="ya.html">Young Adult</a></li>
+            </ul>
+            </div>
+
+            <i id="up" class="fa fa-caret-up" aria-hidden="true"></i>   
 
 
         </section>
@@ -32,15 +54,83 @@
         
         <div class="sitebody">
 
+            <h2>Young Adult, Historical</h2>
+            <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="ya.html">All Young Adult</a></p>
+
 
             <div id="books">
             <div class="filter-bar">
               <input class="search" placeholder="Search" />
             <!-- class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by. -->
-              <button class="sort asc" data-sort="title">
+              <button class="sort" data-sort="title">
                 Sort by title
               </button>
               <button class="sort" data-sort="author">
                 Sort by author
               </button>
               </div>
+
+              <div class="list">
+                <div class="book">
+                    <p class="title">Salt to the Sea</p>
+                    <p class="author">Sepetys, Ruta</p>
+                    <a href="#saltmodal"><img id="salt" class="mainimg" src="img/Salt.jpg"></a>
+                </div>
+                <div class="book">
+                    <p class="title">Girl in the Blue Coat</p>
+                    <p class="author">Hesse, Monica</p>
+                    <a href="#bluecoatmodal"><img class="mainimg" src="img/BlueCoat.jpg"></a>
+                </div>
+          </div>
+     </div>
+</div>
+
+<div id="saltmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="salt" class="modalimg" src="img/Salt.jpg">
+                    <h2>Salt to the Sea by Ruta Sepetys</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> An incredible story. Sepety's writing is both beautiful and heartbreaking. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>Winter, 1945. Four teenagers. Four secrets.</p>
+
+                    <p>Each one born of a different homeland; each one hunted, and haunted, by tragedy, lies…and war.</p>
+
+                    <p>As thousands of desperate refugees flock to the coast in the midst of a Soviet advance, four paths converge, vying for passage aboard the Wilhelm Gustloff, a ship that promises safety and freedom.</p>
+
+                    <p>Yet not all promises can be kept.</p>
+
+                    <p>Inspired by the single greatest tragedy in maritime history, bestselling and award-winning author Ruta Sepetys (Between Shades of Gray) lifts the veil on a shockingly little-known casualty of World War II. An illuminating and life-affirming tale of heart and hope.</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="ya.html">Young Adult</a>, <a href="ya-historical.html">YA Historical Fiction</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/salt-to-the-sea-ruta-sepetys/1121907650?ean=9780399160301" target="_blank"><h4>PURCHASE</h4></a> 
+            </div>
+        </div>
+
+        <div id="bluecoatmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="bluecoat" class="modalimg" src="img/BlueCoat.jpg">
+                    <h2>Girl in the Blue Coat by Monica Hesse</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> A stunning and heart-wrenching story showing a unique perspective on WWII, and the way it affected the lives of everyone during the time period. A truly unforgettable and utterly incredible story that will stay with you long after you’ve finished reading it. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>Amsterdam, 1943. Hanneke spends her days finding and delivering sought-after black market goods to paying customers, nights hiding the true nature of her work from her concerned parents, and every waking moment mourning her boyfriend, who was killed on the Dutch front lines when the German army invaded. Her illegal work keeps her family afloat, and Hanneke also likes to think of it as a small act of rebellion against the Nazis.</p>
+
+                    <p>On a routine delivery, a client asks Hanneke for help. Expecting to hear that Mrs. Janssen wants meat or kerosene, Hanneke is shocked by the older woman’s frantic plea to find a person: a Jewish teenager Mrs. Janssen had been hiding, who has vanished without a trace from a secret room. Hanneke initially wants nothing to do with such a dangerous task but is ultimately drawn into a web of mysteries and stunning revelations—where the only way out is through.</p>
+
+                    <p>Beautifully written, intricately plotted, and meticulously researched, Girl in the Blue Coat is an extraordinary, unforgettable story of bravery, grief, and love in impossible times.</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="ya.html">Young Adult</a>, <a href="ya-historical.html">YA Historical</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/girl-in-the-blue-coat-monica-hesse/1122451136?ean=9780316260602&st=AFF&2sid=Goodreads,%20Inc_2227948_NA&sourceId=AFFGoodreads,%20IncM000004" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+</html>

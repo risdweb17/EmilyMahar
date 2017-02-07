@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>Bookshelf</title>
-        <meta name="Bookshelf" content="Catalog your personal library">
+        <meta name="Bookshelf" content="Curated book recs from all genres!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://use.fontawesome.com/98e787cea0.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Fauna+One" rel="stylesheet">
         <link rel="stylesheet" href="home-css/style.css">
+        
 
     </head>
     <body>
@@ -19,7 +20,33 @@
         </section>
 
         <section class="navigation">
-            
+
+            <button class="library menu" id="library"><h3>Library <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+
+            <button class="genres menu" id="genres"><h3>Genres <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+
+            <a href="lists.html"><button class="menu" id="lists"><h3>Lists</h3></button></a>
+           
+
+
+
+            <div class="sublibrary">
+            <ul>
+                <li><a href="read.html">Read</a></li>
+                <li><a href="to-read.html">To-Read</a></li>
+            </ul>
+            </div>
+
+            <div class="subgenres">
+            <ul>
+                <li><a href="childrens.html">Children's</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="non-fiction.html">Non-Fiction</a></li>
+                <li><a href="ya.html">Young Adult</a></li>
+            </ul>
+            </div>
+
+            <i id="up" class="fa fa-caret-up" aria-hidden="true"></i>   
 
 
         </section>
@@ -27,15 +54,49 @@
         
         <div class="sitebody">
 
+            <h2>Fiction, Contemporary</h2>
+            <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="fiction.html">All Fiction</a></p>
 
             <div id="books">
             <div class="filter-bar">
               <input class="search" placeholder="Search" />
             <!-- class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by. -->
-              <button class="sort asc" data-sort="title">
+              <button class="sort" data-sort="title">
                 Sort by title
               </button>
               <button class="sort" data-sort="author">
                 Sort by author
               </button>
               </div>
+
+              <div class="list">
+                <div class="book">
+                    <p class="title">Mr. Penumbra's 24-Hour Bookstore</p>
+                    <p class="author">Sloan, Robin</p>
+                    <a href="#penumbramodal"><img id="penumbra" class="mainimg" src="img/Penumbra.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="penumbramodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="penumbra" class="modalimg" src="img/Penumbra.jpg">
+                    <h2>Mr. Penumbra's 24-Hour Bookstore by Robin Sloan</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> Any book-lover, computer geek, or seeker of a good story will devour this book! <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>The Great Recession has shuffled Clay Jannon away from life as a San Francisco web-design drone and into the aisles of Mr. Penumbra’s 24-Hour Bookstore. But after a few days on the job, Clay discovers that the store is more curious than either its name or its gnomic owner might suggest. The bookstore’s secrets extend far beyond its walls.</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="fiction.html">Fiction</a>, <a href="fiction-contemporary.html">Contemporary</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/mr-penumbras-24-hour-bookstore-robin-sloan/1108946314?ean=9781250037756" target="_blank"><h4>PURCHASE</h4></a>
+
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+</html>

@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>Bookshelf</title>
-        <meta name="Bookshelf" content="Catalog your personal library">
+        <meta name="Bookshelf" content="Curated book recs from all genres!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://use.fontawesome.com/98e787cea0.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Fauna+One" rel="stylesheet">
         <link rel="stylesheet" href="home-css/style.css">
+       
 
     </head>
     <body>
@@ -19,7 +20,33 @@
         </section>
 
         <section class="navigation">
-            
+
+            <button class="library menu" id="library"><h3>Library <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+
+            <button class="genres menu" id="genres"><h3>Genres <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+
+            <a href="lists.html"><button class="menu" id="lists"><h3>Lists</h3></button></a>
+           
+
+
+
+            <div class="sublibrary">
+            <ul>
+                <li><a href="read.html">Read</a></li>
+                <li><a href="to-read.html">To-Read</a></li>
+            </ul>
+            </div>
+
+            <div class="subgenres">
+            <ul>
+                <li><a href="childrens.html">Children's</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="non-fiction.html">Non-Fiction</a></li>
+                <li><a href="ya.html">Young Adult</a></li>
+            </ul>
+            </div>
+
+            <i id="up" class="fa fa-caret-up" aria-hidden="true"></i>   
 
 
         </section>
@@ -27,22 +54,23 @@
         
         <div class="sitebody">
 
-        <h2>Young Adult</h2>
+            <h2>Young Adult</h2>
+            <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="ya-contemporary.html">Contemporary</a>, <a href="ya-fantasy.html">Fantasy</a>, <a href="ya-historical.html">Historical</a>, <a href="ya-mystery.html">Mystery/Thriller</a></p>
 
-        <div id="books">
+
+            <div id="books">
             <div class="filter-bar">
               <input class="search" placeholder="Search" />
             <!-- class="sort" automagically makes an element a sort buttons. The date-sort value decides what to sort by. -->
-              <button class="sort asc" data-sort="title">
+              <button class="sort" data-sort="title">
                 Sort by title
               </button>
               <button class="sort" data-sort="author">
                 Sort by author
               </button>
-            </div>
+              </div>
 
-
-          <div class="list">
+              <div class="list">
                 <div class="book">
                     <p class="title">Salt to the Sea</p>
                     <p class="author">Sepetys, Ruta</p>
@@ -76,3 +104,136 @@
         </div>
         </div>
 </div>
+
+<div id="saltmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="salt" class="modalimg" src="img/Salt.jpg">
+                    <h2>Salt to the Sea by Ruta Sepetys</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> An incredible story. Sepety's writing is both beautiful and heartbreaking. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>Winter, 1945. Four teenagers. Four secrets.</p>
+
+                    <p>Each one born of a different homeland; each one hunted, and haunted, by tragedy, lies…and war.</p>
+
+                    <p>As thousands of desperate refugees flock to the coast in the midst of a Soviet advance, four paths converge, vying for passage aboard the Wilhelm Gustloff, a ship that promises safety and freedom.</p>
+
+                    <p>Yet not all promises can be kept.</p>
+
+                    <p>Inspired by the single greatest tragedy in maritime history, bestselling and award-winning author Ruta Sepetys (Between Shades of Gray) lifts the veil on a shockingly little-known casualty of World War II. An illuminating and life-affirming tale of heart and hope.</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="ya.html">Young Adult</a>, <a href="ya-historical.html">YA Historical Fiction</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/salt-to-the-sea-ruta-sepetys/1121907650?ean=9780399160301" target="_blank"><h4>PURCHASE</h4></a> 
+            </div>
+        </div>
+
+        <div id="bluecoatmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="bluecoat" class="modalimg" src="img/BlueCoat.jpg">
+                    <h2>Girl in the Blue Coat by Monica Hesse</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> A stunning and heart-wrenching story showing a unique perspective on WWII, and the way it affected the lives of everyone during the time period. A truly unforgettable and utterly incredible story that will stay with you long after you’ve finished reading it. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>Amsterdam, 1943. Hanneke spends her days finding and delivering sought-after black market goods to paying customers, nights hiding the true nature of her work from her concerned parents, and every waking moment mourning her boyfriend, who was killed on the Dutch front lines when the German army invaded. Her illegal work keeps her family afloat, and Hanneke also likes to think of it as a small act of rebellion against the Nazis.</p>
+
+                    <p>On a routine delivery, a client asks Hanneke for help. Expecting to hear that Mrs. Janssen wants meat or kerosene, Hanneke is shocked by the older woman’s frantic plea to find a person: a Jewish teenager Mrs. Janssen had been hiding, who has vanished without a trace from a secret room. Hanneke initially wants nothing to do with such a dangerous task but is ultimately drawn into a web of mysteries and stunning revelations—where the only way out is through.</p>
+
+                    <p>Beautifully written, intricately plotted, and meticulously researched, Girl in the Blue Coat is an extraordinary, unforgettable story of bravery, grief, and love in impossible times.</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="ya.html">Young Adult</a>, <a href="ya-historical.html">YA Historical</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/girl-in-the-blue-coat-monica-hesse/1122451136?ean=9780316260602&st=AFF&2sid=Goodreads,%20Inc_2227948_NA&sourceId=AFFGoodreads,%20IncM000004" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+        <div id="serpentmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="serpent" class="modalimg" src="img/Serpent.jpg">
+                    <h2>The Serpent King by Jeff Zentner</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> This one will bring the tears. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>Dill isn't the most popular kid at his rural Tennessee high school. After his father fell from grace in a public scandal that reverberated throughout their small town, Dill became a target. Fortunately, his two fellow misfits and best friends, Travis and Lydia, have his back.</p>
+
+                    <p>But as they begin their senior year, Dill feels the coils of his future tightening around him. His only escapes are music and his secret feelings for Lydia--neither of which he is brave enough to share. Graduation feels more like an ending to Dill than a beginning. But even before then, he must cope with another ending--one that will rock his life to the core.   Debut novelist Jeff Zentner provides an unblinking and at times comic view of the hard realities of growing up in the Bible belt, and an intimate look at the struggles to find one’s true self in the wreckage of the past.</p><hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="ya.html">Young Adult</a>, <a href="ya-contemporary.html">YA Contemporary</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/the-serpent-king-jeff-zentner/1122135415?ean=9780553524024" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+        <div id="stolenmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="serpent" class="modalimg" src="img/Stolen.jpg">
+                    <h2>Stolen by Lucy Christopher</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> A dark and emotional story that will keep you turning pages and not knowing how to feel. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>A girl: Gemma, 16, at the airport, on her way to a family vacation.</p>
+
+                    <p>A guy: Ty, rugged, tan, too old, oddly familiar, eyes blue as ice.</p>
+
+                    <p>She steps away. For just a second. He pays for her drink. And drugs it. They talk. Their hands touch. And before Gemma knows what's happening, Ty takes her. Steals her away. To sand and heat. To emptiness and isolation. To nowhere. And expects her to love him.</p>
+
+                    <p>Written as a letter from a victim to her captor, STOLEN is Gemma's desperate story of survival; of how she has to come to terms with her living nightmare--or die trying to fight it.</p>
+
+                    <p>A Michael L. Printz Honor Book  • ALA Best Fiction for Young Adults  • A 2011 USBBY Outstanding International Book</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="ya.html">Young Adult</a>, <a href="ya-contemporary.html">Contemporary</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/stolen-lucy-christopher/1100295753?ean=9780545170949" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+        <div id="tyrantsmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="tyrants" class="modalimg" src="img/Tyrants.jpg">
+                    <h2>The Tyrant's Daughter by J.C. Carleson</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> Raw and filled with emotion, a modern and young take on conflict and war. <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>When her father is killed in a coup, Laila and her mother and brother leave their war-torn homeland for a fresh start in the suburbs of Washington, D.C.
+                    <p>At her new high school, Laila makes mistakes, makes friends, and even meets a boy who catches her eye. But this new life brings unsettling facts to light. The American newspapers call her father a brutal dictator and suggest that her family’s privilege came at the expense of innocent lives. Meanwhile, her mother would like nothing more than to avenge his death, and she’ll go to great lengths to regain their position of power.</p>
+                    <p>As an international crisis takes shape around her, Laila is pulled in one direction, then another, but there’s no time to sort out her feelings. She has to pick a side now, and her decision will affect not just her own life, but countless others. . . .</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="ya.html">Young Adult</a>, <a href="ya-contemporary.html">Contemporary</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/the-tyrants-daughter-jc-carleson/1115292748?ean=9780449809990" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+        <div id="wallsmodal" class="modalDialog">
+            <div>   <a href="#close" title="Close" class="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+
+                    <img id="walls" class="modalimg" src="img/Walls.jpg">
+                    <h2>The Walls Around Us by Nova Ren Suma</h2>
+                    <hr>
+                    <blockquote><i class="fa fa-quote-left" aria-hidden="true"></i> Suma's writing is beautiful, and the combination with the twisty and psychological plot of the story makes The Walls Around Us a must-read.  <i class="fa fa-quote-right" aria-hidden="true"></i></blockquote>
+                    <hr>
+                    <p>On the outside, there’s Violet, an eighteen-year-old dancer days away from the life of her dreams when something threatens to expose the shocking truth of her achievement.</p>
+
+                    <p>On the inside, within the walls of the Aurora Hills juvenile detention center, there’s Amber, locked up for so long she can’t imagine freedom.</p>
+
+                    <p>Tying their two worlds together is Orianna, who holds the key to unlocking all the girls’ darkest mysteries . . .</p>
+
+                    <p>What really happened on the night Orianna stepped between Violet and her tormentors? What really happened on two strange nights at Aurora Hills? Will Amber and Violet and Orianna ever get the justice they deserve—in this life or in another one?</p>
+
+                    <p>In prose that sings from line to line,Nova Ren Suma tells a supernatural tale of guilt and of innocence, and of what happens when one is mistaken for the other.</p>
+                    <hr>
+                    <p><i class="fa fa-tags" aria-hidden="true"></i> <a href="ya.html">Young Adult</a>, <a href="ya-mystery.html">YA Mystery/Thriller</a></p>
+                    <hr>
+                    <a href="http://www.barnesandnoble.com/w/the-walls-around-us-nova-ren-suma/1120132507?ean=9781616205904" target="_blank"><h4>PURCHASE</h4></a>
+            </div>
+        </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+</html>
