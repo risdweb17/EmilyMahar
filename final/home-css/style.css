@@ -3,7 +3,7 @@ body {
 	font-family: 'Fauna One', serif;
 	color: #3d5156;
 	background-size: 127%;
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 }
 
 p {
@@ -382,6 +382,18 @@ button.sort:hover {
 		padding: 0.5em;
 	}
 	
+}
+
+@media screen and (max-width: 660px){
+	.welcomecontainer {
+		width: 100vw;
+		overflow: auto;
+	}
+
+	body {
+		background-size: fill;
+		background-repeat: repeat-y;
+	}
 }
 
 @media screen and (max-width: 470px){
