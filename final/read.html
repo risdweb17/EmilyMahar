@@ -3,17 +3,16 @@
     <head>
         <meta charset="utf-8">
         <title>Bookshelf</title>
-        <meta name="Bookshelf" content="Catalog your personal library">
+        <meta name="Bookshelf" content="Curated book recs from all genres!">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://use.fontawesome.com/98e787cea0.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="js/myscript.js"></script>
+        <script src="https://use.fontawesome.com/98e787cea0.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Fauna+One" rel="stylesheet">
         <link rel="stylesheet" href="home-css/style.css">
+
     </head>
     <body>
 
-    
     <div class="nav-container">
         <section class="header">
             <a href="homepage.html"><h1><i class="fa fa-book" aria-hidden="true"></i> Bookshelf</h1></a>
@@ -22,20 +21,34 @@
         <section class="navigation">
 
             <button class="library menu" id="library"><h3>Library <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
-            <button class="menu" id="genres"><h3>Genres <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
-            <a href="lists.html"><button class="menu" id="lists"><h3>Lists</h3></button></a>
+
+            <button class="genres menu" id="genres"><h3>Genres <i id ="down" class="fa fa-caret-down" aria-hidden="true"></i></h3></button>
+
+            <a href="lists.html"><a href="lists.html"><button class="menu" id="lists"><h3>Lists</h3></button></a></a>
+           
 
 
 
             <div class="sublibrary">
-            <h5><a href="read.html">Read</a></h5>
-            <h5><a href="to-read.html">To-Read</a></h5>
+            <ul>
+                <li><a href="read.html">Read</a></li>
+                <li><a href="to-read.html">To-Read</a></li>
+            </ul>
+            </div>
 
-            <i id="up" class="fa fa-caret-up" aria-hidden="true"></i>   
+            <div class="subgenres">
+            <ul>
+                <li><a href="childrens.html">Children's</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="non-fiction.html">Non-Fiction</a></li>
+                <li><a href="ya.html">Young Adult</a></li>
+            </ul>
+            </div>   
 
 
         </section>
         </div>
+        
 
     <div class="sitebody">
         
